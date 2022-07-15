@@ -296,20 +296,65 @@ def BO2graph(BO_matrix, atoms, atom_valence_electrons, charge, allow_charged_fra
 
     return mol_graph
 
+def edges2path(edges):
+    #Expects a list of tuples for associated edges, if you try to use G.edges it will throw an error as this is an iterator!
+    # Given a list of edges construct a complete walk
+    u, v = edges[0] # Starting and stopping edges 
+ 
+    edges.pop(0)
+    path = [u, v]
+    while True:
+        for n in range(len(edges)):
+            w, k = edges[n]
+            if w == u: 
+                u = k 
+                path.insert(0, k)
+                edges.remove((w,k))
+                break 
+            elif w == v:
+                v = k 
+                path.append(k)
+                edges.remove((w,k))
+                break 
+            elif k == u:
+                u = w 
+                path.insert(0, w)
+                edges.remove((w,k))
+                break 
+            elif k == v:
+                v = w 
+                path.append(w)
+                edges.remove((w,k))
+                break 
+        if not edges:
+            break
+    return path[1:] # First and last element are the same, so just return one occurance of that element
+
+    
+
+
 
 
 def combine_cycles(cycles):
-    # Given a list of TWO binary cycles
+    # Given a list of n binary cycles 
     # Determines if combining them yields a valid new cycle
     # This is determined via the XOR and AND operators
     cycle_to_build = cycles[0] # Start building with first cycle 
-
-    for n in range(1, len(cycles)):
-        valid = np.logical_and(cycle_to_build, cycles[n]).sum()
+    cycles_to_use = cycles[1:]
+    while not cycles_to_use is None:
+        valid = False 
+        for cycle in cycles_to_use:
+            if np.logical_and(cycle_to_build, cycle).sum():
+            # If the new cylce will result in a valid structure ... build it!
+                cycle_to_build = np.logical_xor(cycle_to_build, cycle).astype(int)
+                if isinstance(cycles_to_use, tuple):
+                    cycles_to_use = None
+                else:
+                    cycles_to_use.remove(cycle)
+                valid = True 
+                break 
         if not valid:
             return None 
-        # If the new cylce will result in a valid structure ... build it!
-        cycle_to_build = np.logical_xor(cycle_to_build, cycles[n]).astype(int)
     return cycle_to_build
 
         
@@ -319,17 +364,12 @@ def bin2cycle(bin, edges):
     #Convert binary represenation of cycle to collection of associated nodes
     # Needs edges from associated molecular graph
     # bin is expected to be np array of shape 1 x E where E = number of edges in molecular graph
+
     path = []
-    n = 0 
-    for edge in edges:
-        if bin[0, n]:
-            atom1, atom2 = edge 
-            if not atom1 in path:
-                path.append(atom1)
-            if not atom2 in path:
-                path.append(atom2)
-        n += 1
+    edges4path = [edge for n, edge in enumerate(edges) if bin[0,n]]
+    path = edges2path(edges4path)
     # It is labeled path, but really just returns all node in the represented cycle 
+    #exit()
     return sorted(path)
 
 
@@ -337,15 +377,14 @@ def bin2cycle(bin, edges):
 
 def find_cycles(mol_graph):
     # Get cycle_basis set for associated networkx molecular graph
-      # Now we detect aromatic systems in the graph and update associated bonds
     basis = list(nx.cycle_basis(mol_graph))
     simple_cycles = [b for b in basis]
+
     # Convert basis cycles to bit represenation 
     
     edges = mol_graph.edges # Networkx always returns edge tuples ordered 
     E = len(edges)
     bin_basis = []
-
 
     for b in basis:
         # Convert cycle to list of associated edges 
@@ -377,10 +416,12 @@ def find_cycles(mol_graph):
             cycle_combinations.append(cycle)
 
     for cycles in cycle_combinations:
-        built_cycle = combine_cycles(cycles)
-        if built_cycle is None:
+        bin_cycle = combine_cycles(cycles)
+        if bin_cycle is None:
             continue 
-        simple_cycles.append(bin2cycle(built_cycle, edges))
+        built_cycle = bin2cycle(bin_cycle, edges)
+        print(cycles, built_cycle)
+        simple_cycles.append(built_cycle)
             
     return simple_cycles
 
@@ -391,11 +432,19 @@ def get_cycle_edges(mol_graph, cycle):
     return edges
 
 
-# Given a cycle in a molecular graph detect if it is aromatic via the 4n+2 
+# Given a cycle in a molecular graph detect if it is aromatic via the 4n+2 rule
 def is_aromatic(mol_graph, cycle):
     edges = get_cycle_edges(mol_graph, cycle)
+    pi_electrons = 0
     for edge in edges:
-        print(edge['bondtype'])
+        # Cannot have a triple bond in a cycle 
+        if edge['bondtype'] == str(Chem.BondType.DOUBLE):
+            pi_electrons += 2
+        elif edge['bondtype'] == str(Chem.BondType.AROMATIC):
+            pi_electrons += 1 
+    return (pi_electrons - 2) % 4 == 0
+ 
+        
 
 
 
@@ -822,8 +871,19 @@ if __name__ == "__main__":
     # Find all rings in the graph 
     rings = find_cycles(mol_graph)
 
+    print(rings)
 
-    is_aromatic(mol_graph, rings[0])
+    print(len(rings))
+   
+    exit()
+    for ring in rings:
+        break
+        if is_aromatic(mol_graph, ring):
+            edges = get_cycle_edges(mol_graph, ring)
+            for edge in edges:
+                #mol_graph.add_edge(edge[0], edge[1], bondtype='AROMATIC')
+                continue 
+            
 
 
 
