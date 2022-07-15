@@ -237,7 +237,7 @@ def BO2mol(mol, BO_matrix, atoms, atomic_valence_electrons,
 
     bondTypeDict = {
         1: Chem.BondType.SINGLE,
-        2: Chem.BondType.DOUBLE,
+        2: Chem.wBondType.DOUBLE,
         3: Chem.BondType.TRIPLE
     }
     rows, cols = BO_matrix.shape
@@ -298,13 +298,48 @@ def BO2graph(BO_matrix, atoms, atom_valence_electrons, charge, allow_charged_fra
 
 
 
+def combine_cycles(cycles):
+    # Given a list of TWO binary cycles
+    # Determines if combining them yields a valid new cycle
+    # This is determined via the XOR and AND operators
+    cycle_to_build = cycles[0] # Start building with first cycle 
 
-def setAromaticity(mol_graph):
+    for n in range(1, len(cycles)):
+        valid = np.logical_and(cycle_to_build, cycles[n]).sum()
+        if not valid:
+            return None 
+        # If the new cylce will result in a valid structure ... build it!
+        cycle_to_build = np.logical_xor(cycle_to_build, cycles[n]).astype(int)
+    return cycle_to_build
+
+        
+
+    
+def bin2cycle(bin, edges):
+    #Convert binary represenation of cycle to collection of associated nodes
+    # Needs edges from associated molecular graph
+    # bin is expected to be np array of shape 1 x E where E = number of edges in molecular graph
+    path = []
+    n = 0 
+    for edge in edges:
+        if bin[0, n]:
+            atom1, atom2 = edge 
+            if not atom1 in path:
+                path.append(atom1)
+            if not atom2 in path:
+                path.append(atom2)
+        n += 1
+    # It is labeled path, but really just returns all node in the represented cycle 
+    return sorted(path)
+
+
+
+
+def find_cycles(mol_graph):
     # Get cycle_basis set for associated networkx molecular graph
       # Now we detect aromatic systems in the graph and update associated bonds
-    # For now we only focus on 5 and 6 member aromatic systems
     basis = list(nx.cycle_basis(mol_graph))
-
+    simple_cycles = [b for b in basis]
     # Convert basis cycles to bit represenation 
     
     edges = mol_graph.edges # Networkx always returns edge tuples ordered 
@@ -319,7 +354,7 @@ def setAromaticity(mol_graph):
             edge = (b[v], b[v+1]) if b[v+1] > b[v]  else (b[v+1], b[v])
             basis_edges.append(edge)
         # Create row vector 1 x E 
-        bin = np.zeros(shape = (1, E))
+        bin = np.zeros(shape = (1, E)).astype('int')
         index = 0 
         for edge in edges:
             if edge in basis_edges:
@@ -329,7 +364,10 @@ def setAromaticity(mol_graph):
 
 
     # For N basis cycles ... generates all possible simple cycles which can be generated from these cycles
-    # So all combinations of 2 basis cycles, 3 basis cycles .... N basis cycles 
+    # So all combinations of 2 basis cycles, 3 basis cycles .... N basis cycles
+
+    # Current approach is naive and inefficient (i.e. Makes 3 membered cycle from scratch, instead of using previously 
+    # validated 2 membered cycles.... but for most molecules (< 5 - 10) shouldn't lead to huge preformance issues) 
     cycle_combinations = []
     n = len(basis)
 
@@ -337,8 +375,28 @@ def setAromaticity(mol_graph):
         cycles = itertools.combinations(bin_basis, k)
         for cycle in cycles:
             cycle_combinations.append(cycle)
+
+    for cycles in cycle_combinations:
+        built_cycle = combine_cycles(cycles)
+        if built_cycle is None:
+            continue 
+        simple_cycles.append(bin2cycle(built_cycle, edges))
             
-    return cycle_combinations
+    return simple_cycles
+
+def get_cycle_edges(mol_graph, cycle):
+    edges = [mol_graph.get_edge_data(cycle[-1], cycle[0])]
+    for n in range(len(cycle)-1):
+        edges.append(mol_graph.get_edge_data(cycle[n], cycle[n+1]))
+    return edges
+
+
+# Given a cycle in a molecular graph detect if it is aromatic via the 4n+2 
+def is_aromatic(mol_graph, cycle):
+    edges = get_cycle_edges(mol_graph, cycle)
+    for edge in edges:
+        print(edge['bondtype'])
+
 
 
 
@@ -758,9 +816,16 @@ if __name__ == "__main__":
         allow_charged_fragments=charged_fragments,
         use_graph=quick)
 
-    graph = BO2graph(BO, atoms, atomic_valence_electrons, charge, allow_charged_framents=charged_fragments, use_atoms_maps=False)
+    # Generate molecular graph
+    mol_graph = BO2graph(BO, atoms, atomic_valence_electrons, charge, allow_charged_framents=charged_fragments, use_atoms_maps=False)
+
+    # Find all rings in the graph 
+    rings = find_cycles(mol_graph)
 
 
-    #print(graph.edges(data = True))
+    is_aromatic(mol_graph, rings[0])
 
-    print(setAromaticity(graph))
+
+
+
+   
