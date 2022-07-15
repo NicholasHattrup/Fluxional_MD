@@ -1,0 +1,12 @@
+Torch device: cpu
+Number of weights: 598312
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/bin/nequip-train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 74, in main
+    trainer = restart(config)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 239, in restart
+    trainer = TrainerWandB.from_dict(dictionary)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/train/trainer.py", line 661, in from_dict
+    raise RuntimeError(
+RuntimeError: The previous run has properly stopped with None.Please either increase the max_epoch or change early stop criteria

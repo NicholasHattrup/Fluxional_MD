@@ -1,0 +1,55 @@
+Processing...
+Done!
+Torch device: cpu
+Loaded data: Batch(atomic_numbers=[15694, 1], batch=[15694], cell=[413, 3, 3], edge_cell_shift=[230358, 3], edge_index=[2, 230358], forces=[15694, 3], pbc=[413, 3], pos=[15694, 3], ptr=[414], total_energy=[413, 1])
+Cached processed data to disk
+Successfully loaded the data set of type ASEDataset(413)...
+Replace string dataset_forces_rms to 0.03781650960445404
+Replace string dataset_per_atom_total_energy_mean to -20.318693161010742
+Atomic outputs are scaled by: [H, C: 0.037817], shifted by [H, C: -20.318693].
+Replace string dataset_forces_rms to 0.03781650960445404
+Initially outputs are globally scaled by: 0.03781650960445404, total_energy are globally shifted by None.
+Successfully built the network...
+Number of weights: 458920
+! Starting training ...
+validation
+# Epoch batch         loss       loss_f       loss_e        f_mae       f_rmse      H_f_mae      C_f_mae  psavg_f_mae     H_f_rmse     C_f_rmse psavg_f_rmse        e_mae      e/N_mae
+      0    10         1.04         1.04       0.0025       0.0283       0.0386        0.018       0.0376       0.0278       0.0244       0.0479       0.0361       0.0713      0.00188
+      0    20        0.988        0.985      0.00297       0.0273       0.0375       0.0163       0.0372       0.0267       0.0227        0.047       0.0349       0.0776      0.00204
+      0    30        0.885        0.883      0.00223       0.0264       0.0355       0.0175       0.0345        0.026       0.0235       0.0436       0.0336        0.067      0.00176
+      0    40        0.973        0.971      0.00245       0.0274       0.0373       0.0164       0.0373       0.0268       0.0214       0.0472       0.0343       0.0711      0.00187
+      0    50        0.925        0.923      0.00241       0.0263       0.0363       0.0167       0.0349       0.0258       0.0232        0.045       0.0341       0.0703      0.00185
+      0    60         1.06         1.06      0.00176       0.0289       0.0389       0.0187       0.0381       0.0284       0.0252        0.048       0.0366       0.0585      0.00154
+  Initialization     #    Epoch      wal       LR       loss_f       loss_e         loss        f_mae       f_rmse      H_f_mae      C_f_mae  psavg_f_mae     H_f_rmse     C_f_rmse psavg_f_rmse        e_mae      e/N_mae
+! Initial Validation          0   14.110    0.005        0.998      0.00227            1       0.0277       0.0378       0.0176       0.0367       0.0271       0.0238        0.047       0.0354       0.0674      0.00177
+Wall time: 14.110451041
+! Best model        0    1.001
+training
+# Epoch batch         loss       loss_f       loss_e        f_mae       f_rmse      H_f_mae      C_f_mae  psavg_f_mae     H_f_rmse     C_f_rmse psavg_f_rmse        e_mae      e/N_mae
+      1    10        0.638        0.636      0.00186       0.0213       0.0302       0.0103       0.0313       0.0208       0.0137       0.0395       0.0266       0.0613      0.00161
+      1    20          0.5        0.498      0.00117       0.0184       0.0267      0.00856       0.0272       0.0179        0.011       0.0353       0.0232       0.0489      0.00129
+      1    30        0.438        0.438     6.21e-05       0.0167        0.025      0.00703       0.0255       0.0163      0.00891       0.0334       0.0212       0.0097     0.000255
+      1    40        0.377        0.376      0.00117       0.0161       0.0232      0.00801       0.0234       0.0157       0.0102       0.0305       0.0204       0.0479      0.00126
+      1    50        0.219        0.219     0.000106       0.0126       0.0177      0.00714       0.0175       0.0123      0.00901       0.0229       0.0159       0.0126     0.000333
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/MD/bin/nequip-train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/nequip/scripts/train.py", line 80, in main
+    trainer.train()
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/nequip/train/trainer.py", line 769, in train
+    self.epoch_step()
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/nequip/train/trainer.py", line 904, in epoch_step
+    self.batch_step(
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/nequip/train/trainer.py", line 808, in batch_step
+    out = self.model(input_data)
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/nequip/nn/_rescale.py", line 140, in forward
+    data = self.model(data)
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/nequip/nn/_grad_output.py", line 84, in forward
+    grads = torch.autograd.grad(
+  File "/opt/anaconda3/envs/MD/lib/python3.9/site-packages/torch/autograd/__init__.py", line 275, in grad
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

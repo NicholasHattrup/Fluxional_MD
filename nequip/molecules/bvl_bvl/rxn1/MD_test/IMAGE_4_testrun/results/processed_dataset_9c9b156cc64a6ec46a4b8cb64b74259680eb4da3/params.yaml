@@ -1,0 +1,12 @@
+ase_args: {}
+dtype: torch.float32
+extra_fixed_fields:
+  r_max: 4.0
+file_name: ./test/test-data.extxyz
+force_fixed_keys: !!set {}
+include_frames: null
+include_keys: null
+key_mapping: null
+nequip_version: 0.5.5
+root: test/results
+url: null

@@ -1,0 +1,1 @@
+{"LR": 0.005, "epoch": 0, "wall": 8.042405916, "cumulative_wall": 8.042405916, "validation_loss_e": 0.012631868943572044, "validation_loss": 0.012631868943572044, "validation_e/N_mae": 0.0017903964035212994, "_timestamp": 1657575325, "_runtime": 26, "_step": 0}

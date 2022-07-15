@@ -1,0 +1,16 @@
+Torch device: cpu
+Processing dataset...
+Loaded data: Batch(atomic_numbers=[38456, 1], batch=[38456], cell=[1012, 3, 3], edge_cell_shift=[564990, 3], edge_index=[2, 564990], forces=[38456, 3], pbc=[1012, 3], pos=[38456, 3], ptr=[1013], total_energy=[1012, 1])
+Cached processed data to disk
+Done!
+Successfully loaded the data set of type ASEDataset(1012)...
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/bin/nequip-train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 72, in main
+    trainer = fresh_start(config)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 156, in fresh_start
+    trainer.set_dataset(dataset, validation_dataset)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/train/trainer.py", line 1162, in set_dataset
+    raise ValueError(
+ValueError: too little data for training and validation. please reduce n_train and n_val

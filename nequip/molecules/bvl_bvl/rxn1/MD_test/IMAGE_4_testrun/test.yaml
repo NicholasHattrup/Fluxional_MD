@@ -1,0 +1,9 @@
+root: ./test/results/
+chemical_symbols:
+  - H
+  - C
+
+
+dataset: ase                                                                       # type of data set, can be npz or ase
+dataset_url:      # url to download the npz. optional
+dataset_file_name: ./test/test-data.extxyz

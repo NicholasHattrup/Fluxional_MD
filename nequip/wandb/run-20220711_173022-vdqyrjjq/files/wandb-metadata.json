@@ -1,0 +1,23 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-07-11T21:30:23.695631",
+    "startedAt": "2022-07-11T21:30:22.810402",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "configs/bvl_bvl_rxn1.yaml"
+    ],
+    "state": "running",
+    "program": "/opt/anaconda3/envs/nequip/bin/nequip-train",
+    "git": {
+        "remote": "https://github.com/mir-group/nequip.git",
+        "commit": "084ad1c48b520b73882ba7f572e36e75822ac056"
+    },
+    "email": null,
+    "root": "/Users/nhattrup/Documents/research/Fluxional_MD/nequip",
+    "host": "GPGGRP-SHANNON.CHEME.CMU.EDU",
+    "username": "nhattrup",
+    "executable": "/opt/anaconda3/envs/nequip/bin/python"
+}

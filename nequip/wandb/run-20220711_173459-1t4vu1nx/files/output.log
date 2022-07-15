@@ -1,0 +1,28 @@
+Torch device: cpu
+Processing dataset...
+Loaded data: Batch(atomic_numbers=[153824, 1], batch=[153824], cell=[4048, 3, 3], edge_cell_shift=[2259960, 3], edge_index=[2, 2259960], forces=[153824, 3], pbc=[4048, 3], pos=[153824, 3], ptr=[4049], total_energy=[4048, 1])
+Cached processed data to disk
+Done!
+Successfully loaded the data set of type ASEDataset(4048)...
+Replace string dataset_forces_rms to 0.037282198667526245
+Replace string dataset_per_atom_total_energy_mean to -20.318906784057617
+Atomic outputs are scaled by: [H, C: 0.037282], shifted by [H, C: -20.318907].
+Replace string dataset_total_energy_std to tensor([0.0164])
+Initially outputs are globally scaled by: tensor([0.0164]), total_energy are globally shifted by None.
+Successfully built the network...
+Number of weights: 458920
+! Starting training ...
+validation
+# Epoch batch         loss       loss_e      e/N_mae
+      0    10       0.0129       0.0129      0.00184
+      0    20       0.0118       0.0118      0.00172
+      0    30      0.00986      0.00986      0.00152
+      0    40       0.0128       0.0128      0.00181
+      0    50       0.0118       0.0118      0.00176
+      0    60      0.00885      0.00885      0.00154
+      0    61       0.0184       0.0184      0.00197
+  Initialization     #    Epoch      wal       LR       loss_e         loss      e/N_mae
+! Initial Validation          0    8.042    0.005       0.0126       0.0126      0.00179
+Wall time: 8.042602457999998
+! Best model        0    0.013
+training

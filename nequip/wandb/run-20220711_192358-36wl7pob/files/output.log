@@ -1,0 +1,39 @@
+Torch device: cpu
+Processing dataset...
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/auto_init.py", line 232, in instantiate
+    instance = builder(**positional_args, **final_optional_args)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 874, in __init__
+    super().__init__(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 166, in __init__
+    super().__init__(root=root, type_mapper=type_mapper)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 50, in __init__
+    super().__init__(root=root, transform=type_mapper)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/torch_geometric/dataset.py", line 91, in __init__
+    self._process()
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/torch_geometric/dataset.py", line 176, in _process
+    self.process()
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 218, in process
+    data = self.get_data()
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 965, in get_data
+    datas = reader(rank=0)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 783, in _ase_dataset_reader
+    AtomicData.from_ase(atoms=atoms, **atomicdata_kwargs)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/AtomicData.py", line 442, in from_ase
+    return cls.from_points(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/AtomicData.py", line 294, in from_points
+    raise ValueError("pos and r_max must be given.")
+ValueError: pos and r_max must be given.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/bin/nequip-train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 72, in main
+    trainer = fresh_start(config)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 144, in fresh_start
+    dataset = dataset_from_config(config, prefix="dataset")
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/_build.py", line 78, in dataset_from_config
+    instance, _ = instantiate(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/auto_init.py", line 234, in instantiate
+    raise RuntimeError(
+RuntimeError: Failed to build object with prefix `dataset` using builder `ASEDataset`

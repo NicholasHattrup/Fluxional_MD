@@ -1,0 +1,22 @@
+Torch device: cpu
+Processing dataset...
+Loaded data: Batch(atomic_numbers=[38456, 1], batch=[38456], cell=[1012, 3, 3], edge_cell_shift=[564990, 3], edge_index=[2, 564990], pbc=[1012, 3], pos=[38456, 3], ptr=[1013], total_energy=[1012, 1])
+Cached processed data to disk
+Done!
+Successfully loaded the data set of type ASEDataset(1012)...
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/bin/nequip-train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 72, in main
+    trainer = fresh_start(config)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 159, in fresh_start
+    final_model = model_from_config(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/model/_build.py", line 89, in model_from_config
+    model = builder(**params)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/model/_scaling.py", line 202, in PerSpeciesRescale
+    computed_stats = _compute_stats(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/model/_scaling.py", line 325, in _compute_stats
+    values = dataset.statistics(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 444, in statistics
+    raise RuntimeError(
+RuntimeError: The field key `forces` is not present in this dataset

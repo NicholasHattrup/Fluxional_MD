@@ -1,0 +1,16 @@
+ase_args: {}
+dtype: torch.float32
+extra_fixed_fields:
+  r_max: 4.0
+file_name: molecules/bvl_bpin2/rxn1/TS_MD/bvl_bpin2_training.extxyz
+force_fixed_keys: !!set {}
+include_frames: null
+include_keys: null
+key_mapping:
+  E: total_energy
+  F: forces
+  R: pos
+  z: atomic_numbers
+nequip_version: 0.5.5
+root: results/bvl_bpin2_rxn1
+url: null

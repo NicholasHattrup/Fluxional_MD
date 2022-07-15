@@ -1,0 +1,41 @@
+Torch device: cpu
+Processing dataset...
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/auto_init.py", line 232, in instantiate
+    instance = builder(**positional_args, **final_optional_args)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 874, in __init__
+    super().__init__(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 166, in __init__
+    super().__init__(root=root, type_mapper=type_mapper)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 50, in __init__
+    super().__init__(root=root, transform=type_mapper)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/torch_geometric/dataset.py", line 91, in __init__
+    self._process()
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/torch_geometric/dataset.py", line 176, in _process
+    self.process()
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 218, in process
+    data = self.get_data()
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 965, in get_data
+    datas = reader(rank=0)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/dataset.py", line 778, in _ase_dataset_reader
+    for i, atoms in enumerate(ase.io.iread(**ase_kwargs, index=index, parallel=False)):
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/ase/io/formats.py", line 767, in iread
+    format = format or filetype(filename, read=isinstance(filename, str))
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/ase/io/formats.py", line 920, in filetype
+    fd = open_with_compression(filename, 'rb')
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/ase/io/formats.py", line 551, in open_with_compression
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/nhattrup/Documents/research/Fluxional_MD/nequip/molecules/bvl_bvl/rxn1/TS_MD/bvl_bvl_rxn1_energy_only.extxyz'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/nequip/bin/nequip-train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 72, in main
+    trainer = fresh_start(config)
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/scripts/train.py", line 144, in fresh_start
+    dataset = dataset_from_config(config, prefix="dataset")
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/data/_build.py", line 78, in dataset_from_config
+    instance, _ = instantiate(
+  File "/opt/anaconda3/envs/nequip/lib/python3.9/site-packages/nequip/utils/auto_init.py", line 234, in instantiate
+    raise RuntimeError(
+RuntimeError: Failed to build object with prefix `dataset` using builder `ASEDataset`

@@ -1,0 +1,249 @@
+Torch device: cpu
+Number of weights: 41216
+! Starting training ...
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      0     1        0.677        0.677         20.6         25.9
+      0     2        0.898        0.898         22.7         29.8
+      0     3         1.18         1.18         26.9         34.3
+      0     4        0.554        0.554         18.2         23.4
+      0     5         1.53         1.53         25.5           39
+
+
+  Initialization     #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Initial Validation          0    1.466     0.01        0.969        0.969         22.8           31
+Wall time: 1.4660131249999964
+! Best model        0    0.969
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      1     1        0.677        0.677         20.6         25.9
+      1     2         1.54         1.54         25.5           39
+      1     3        0.827        0.827         21.8         28.6
+      1     4         1.15         1.15         26.2         33.8
+      1     5        0.517        0.517         17.3         22.7
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      1     1        0.944        0.944         23.2         30.6
+      1     2        0.746        0.746         20.1         27.2
+      1     3         1.44         1.44         27.5         37.9
+      1     4        0.932        0.932         22.5         30.4
+      1     5         1.04         1.04         24.8         32.1
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               1    4.134     0.01        0.942        0.942         22.3         30.6
+! Validation          1    4.134     0.01         1.02         1.02         23.6         31.8
+Wall time: 4.134665708
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      2     1         1.43         1.43         24.8         37.7
+      2     2         0.58         0.58           19           24
+      2     3         1.05         1.05         24.8         32.2
+      2     4        0.487        0.487         16.4           22
+      2     5        0.643        0.643         19.3         25.3
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      2     1        0.837        0.837         21.8         28.8
+      2     2        0.714        0.714         19.5         26.6
+      2     3         1.31         1.31         26.6           36
+      2     4        0.893        0.893           22         29.8
+      2     5         1.01         1.01         24.2         31.7
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               2    4.840     0.01        0.837        0.837         20.9         28.8
+! Validation          2    4.840     0.01        0.953        0.953         22.8         30.8
+Wall time: 4.839958750000001
+! Best model        2    0.953
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      3     1        0.522        0.522         18.1         22.8
+      3     2         1.29         1.29         23.8         35.8
+      3     3        0.449        0.449         15.2         21.1
+      3     4         0.83         0.83         22.3         28.7
+      3     5        0.471        0.471         16.7         21.6
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      3     1        0.711        0.711         19.7         26.6
+      3     2        0.693        0.693         18.5         26.2
+      3     3         1.16         1.16         25.3         33.9
+      3     4        0.847        0.847         21.3           29
+      3     5        0.993        0.993           24         31.4
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               3    5.549     0.01        0.712        0.712         19.2         26.6
+! Validation          3    5.549     0.01         0.88         0.88         21.8         29.6
+Wall time: 5.549342250000002
+! Best model        3    0.880
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      4     1        0.729        0.729         21.1         26.9
+      4     2        0.433        0.433         16.2         20.7
+      4     3        0.423        0.423         14.4         20.5
+      4     4        0.338        0.338         13.9         18.3
+      4     5         1.09         1.09         21.8         32.9
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      4     1        0.614        0.614         18.2         24.7
+      4     2        0.663        0.663         17.8         25.6
+      4     3        0.983        0.983         23.5         31.2
+      4     4        0.784        0.784         19.8         27.9
+      4     5         0.94         0.94         23.2         30.5
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               4    6.258     0.01        0.603        0.603         17.5         24.5
+! Validation          4    6.258     0.01        0.797        0.797         20.5         28.1
+Wall time: 6.258620792000002
+! Best model        4    0.797
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      5     1         0.27         0.27         12.4         16.4
+      5     2        0.463        0.463         16.5         21.4
+      5     3        0.401        0.401         14.6           20
+      5     4        0.979        0.979         20.1         31.2
+      5     5        0.457        0.457         14.6         21.3
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      5     1        0.525        0.525         15.9         22.8
+      5     2        0.632        0.632         17.6           25
+      5     3         0.81         0.81           20         28.3
+      5     4        0.699        0.699         18.6         26.3
+      5     5        0.847        0.847         20.8           29
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               5    6.967     0.01        0.514        0.514         15.6         22.6
+! Validation          5    6.967     0.01        0.703        0.703         18.6         26.4
+Wall time: 6.967105707999998
+! Best model        5    0.703
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      6     1         0.44         0.44         14.3         20.9
+      6     2        0.375        0.375         14.1         19.3
+      6     3        0.307        0.307         13.7         17.4
+      6     4        0.864        0.864         18.5         29.3
+      6     5        0.215        0.215         11.8         14.6
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      6     1        0.439        0.439         14.5         20.9
+      6     2        0.495        0.495         15.6         22.2
+      6     3        0.717        0.717         18.3         26.7
+      6     4        0.527        0.527         15.8         22.9
+      6     5        0.708        0.708           19         26.5
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               6    7.676     0.01         0.44         0.44         14.5         20.9
+! Validation          6    7.676     0.01        0.577        0.577         16.7         23.9
+Wall time: 7.675981667000002
+! Best model        6    0.577
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      7     1        0.312        0.312         12.1         17.6
+      7     2        0.177        0.177           11         13.3
+      7     3        0.291        0.291           13           17
+      7     4        0.321        0.321         14.6         17.8
+      7     5        0.758        0.758           18         27.4
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      7     1        0.414        0.414         14.4         20.3
+      7     2        0.378        0.378         13.9         19.4
+      7     3        0.649        0.649         17.3         25.4
+      7     4        0.485        0.485         15.1         21.9
+      7     5        0.638        0.638         17.3         25.2
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               7    8.386     0.01        0.372        0.372         13.8         19.2
+! Validation          7    8.386     0.01        0.513        0.513         15.6         22.6
+Wall time: 8.385843583000003
+! Best model        7    0.513
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      8     1        0.275        0.275         12.7         16.5
+      8     2        0.692        0.692         17.1         26.2
+      8     3        0.169        0.169         10.3           13
+      8     4        0.304        0.304         12.5         17.4
+      8     5        0.212        0.212         11.2         14.5
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      8     1        0.404        0.404         14.4           20
+      8     2        0.345        0.345         13.6         18.5
+      8     3         0.52         0.52         15.3         22.7
+      8     4        0.497        0.497         15.7         22.2
+      8     5        0.653        0.653         17.2         25.4
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               8    9.094     0.01         0.33         0.33         12.8         18.1
+! Validation          8    9.094     0.01        0.484        0.484         15.2         21.9
+Wall time: 9.093693582999997
+! Best model        8    0.484
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      9     1        0.199        0.199         10.8         14.1
+      9     2        0.304        0.304         11.7         17.4
+      9     3        0.542        0.542         15.5         23.2
+      9     4        0.133        0.133         9.17         11.5
+      9     5        0.344        0.344         13.8         18.5
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+      9     1        0.429        0.429         14.9         20.6
+      9     2        0.306        0.306         13.2         17.4
+      9     3         0.52         0.52         15.1         22.7
+      9     4        0.402        0.402         13.9           20
+      9     5        0.667        0.667         17.1         25.7
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train               9    9.801     0.01        0.304        0.304         12.2         17.4
+! Validation          9    9.801     0.01        0.465        0.465         14.8         21.5
+Wall time: 9.801630125000003
+! Best model        9    0.465
+
+training
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+     10     1        0.487        0.487         15.2           22
+     10     2        0.325        0.325         13.6           18
+     10     3          0.1          0.1         7.98         9.97
+     10     4        0.145        0.145         9.51           12
+     10     5        0.281        0.281           11         16.7
+
+validation
+# Epoch batch         loss       loss_f        f_mae       f_rmse
+     10     1        0.401        0.401         13.9           20
+     10     2        0.295        0.295         12.6         17.1
+     10     3        0.521        0.521         14.2         22.7
+     10     4        0.389        0.389           14         19.7
+     10     5        0.613        0.613         16.8         24.7
+
+
+  Train      #    Epoch      wal       LR       loss_f         loss        f_mae       f_rmse
+! Train              10   10.508     0.01        0.268        0.268         11.4         16.3
+! Validation         10   10.508     0.01        0.444        0.444         14.3           21
+Wall time: 10.507714167000003
+! Best model       10    0.444
+! Stop training: max epochs
+Wall time: 10.517372041999998
+Cumulative wall time: 10.517372041999998

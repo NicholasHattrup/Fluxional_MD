@@ -1,0 +1,15 @@
+Torch device: cpu
+Processing dataset...
+Loaded data: Batch(atomic_numbers=[38456, 1], batch=[38456], cell=[1012, 3, 3], edge_cell_shift=[564990, 3], edge_index=[2, 564990], forces=[38456, 3], pbc=[1012, 3], pos=[38456, 3], ptr=[1013], total_energy=[1012, 1])
+Cached processed data to disk
+Done!
+Successfully loaded the data set of type ASEDataset(1012)...
+Replace string dataset_forces_rms to 0.03737002611160278
+Replace string dataset_per_atom_total_energy_mean to -20.31889533996582
+Atomic outputs are scaled by: [H, B, C, O: 0.037370], shifted by [H, B, C, O: -20.318895].
+Replace string dataset_forces_rms to 0.03737002611160278
+Initially outputs are globally scaled by: 0.03737002611160278, total_energy are globally shifted by None.
+Successfully built the network...
+Number of weights: 598312
+! Starting training ...
+validation

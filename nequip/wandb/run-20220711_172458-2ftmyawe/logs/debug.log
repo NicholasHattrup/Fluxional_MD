@@ -1,0 +1,116 @@
+2022-07-11 17:24:58,933 INFO    MainThread:11423 [wandb_setup.py:_flush():76] Configure stats pid to 11423
+2022-07-11 17:24:58,933 INFO    MainThread:11423 [wandb_setup.py:_flush():76] Loading settings from /Users/nhattrup/.config/wandb/settings
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_setup.py:_flush():76] Loading settings from /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/settings
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-07-11 17:24:58,934 WARNING MainThread:11423 [wandb_setup.py:_flush():76] Could not save program above cwd: /opt/anaconda3/envs/nequip/bin/nequip-train
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '/opt/anaconda3/envs/nequip/bin/nequip-train'}
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_init.py:_log_setup():461] Logging user logs to /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220711_172458-2ftmyawe/logs/debug.log
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_init.py:_log_setup():462] Logging internal logs to /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220711_172458-2ftmyawe/logs/debug-internal.log
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_init.py:init():495] calling init triggers
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'_jit_bailout_depth': 2, '_jit_fusion_strategy': [('DYNAMIC', 3)], 'root': 'results/bvl_bvl_rxn1/energy_only', 'run_name': 'bvl_bvl_rxn1_energy_only', 'wandb': True, 'wandb_project': 'bvl_bvl_rxn1', 'model_builders': ['SimpleIrrepsConfig', 'EnergyModel', 'PerSpeciesRescale', 'ForceOutput', 'RescaleEnergyEtc'], 'dataset_statistics_stride': 1, 'default_dtype': 'float32', 'allow_tf32': False, 'verbose': 'info', 'model_debug_mode': False, 'equivariance_test': False, 'grad_anomaly_mode': False, 'append': True, 'seed': 123, 'dataset_seed': 456, 'r_max': 4.0, 'num_layers': 4, 'l_max': 1, 'parity': True, 'num_features': 64, 'nonlinearity_type': 'gate', 'nonlinearity_scalars': {'e': 'silu', 'o': 'tanh'}, 'nonlinearity_gates': {'e': 'silu', 'o': 'tanh'}, 'num_basis': 8, 'BesselBasis_trainable': True, 'PolynomialCutoff_p': 6, 'invariant_layers': 2, 'invariant_neurons': 64, 'avg_num_neighbors': 'auto', 'use_sc': True, 'dataset': 'ase', 'dataset_url': None, 'dataset_file_name': 'molecules/bvl_bvl/rxn1/TS_MD/bvl_bvl_rxn1_energy_only.extxyz', 'key_mapping': {'z': 'atomic_numbers', 'E': 'total_energy', 'F': None, 'R': 'pos'}, 'npz_fixed_field_keys': ['atomic_numbers'], 'chemical_symbols': ['H', 'C'], 'log_batch_freq': 10, 'log_epoch_freq': 1, 'save_checkpoint_freq': -1, 'save_ema_checkpoint_freq': -1, 'n_train': 707, 'n_val': 303, 'learning_rate': 0.005, 'batch_size': 15, 'max_epochs': 1000, 'train_val_split': 'random', 'shuffle': True, 'metrics_key': 'validation_loss', 'use_ema': True, 'ema_decay': 0.99, 'ema_use_num_updates': True, 'report_init_validation': True, 'early_stopping_patiences': {'validation_loss': 50}, 'early_stopping_lower_bounds': {'LR': 1e-05}, 'loss_coeffs': {'total_energy': [1, 'PerAtomMSELoss']}, 'metrics_components': [['total_energy', 'mae', {'PerAtom': True}]], 'optimizer_name': 'Adam', 'optimizer_amsgrad': False, 'lr_scheduler_name': 'ReduceLROnPlateau', 'lr_scheduler_patience': 100, 'lr_scheduler_factor': 0.5, 'per_species_rescale_shifts_trainable': False, 'per_species_rescale_scales_trainable': False, 'per_species_rescale_shifts': 'dataset_per_atom_total_energy_mean', 'per_species_rescale_scales': 'dataset_forces_rms', 'torch_version': '1.12.0', 'e3nn_version': '0.5.0', 'nequip_version': '0.5.5', 'code_commits': {}}
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [wandb_init.py:init():548] starting backend
+2022-07-11 17:24:58,934 INFO    MainThread:11423 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-07-11 17:24:58,946 INFO    MainThread:11423 [backend.py:ensure_launched():217] starting backend process...
+2022-07-11 17:24:58,955 INFO    MainThread:11423 [backend.py:ensure_launched():222] started backend process with pid: 11432
+2022-07-11 17:24:58,957 INFO    MainThread:11423 [wandb_init.py:init():558] backend started and connected
+2022-07-11 17:24:58,967 INFO    MainThread:11423 [wandb_init.py:init():634] updated telemetry
+2022-07-11 17:24:58,995 INFO    MainThread:11423 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-07-11 17:24:59,674 INFO    MainThread:11423 [wandb_run.py:_on_init():1919] communicating current version
+2022-07-11 17:24:59,736 INFO    MainThread:11423 [wandb_run.py:_on_init():1923] got version response 
+2022-07-11 17:24:59,736 INFO    MainThread:11423 [wandb_init.py:init():700] starting run threads in backend
+2022-07-11 17:25:01,688 INFO    MainThread:11423 [wandb_run.py:_console_start():1893] atexit reg
+2022-07-11 17:25:01,688 INFO    MainThread:11423 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2022-07-11 17:25:01,688 INFO    MainThread:11423 [wandb_run.py:_redirect():1771] Redirecting console.
+2022-07-11 17:25:01,689 INFO    MainThread:11423 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-07-11 17:25:01,689 INFO    MainThread:11423 [wandb_init.py:init():732] run started, returning control to user process
+2022-07-11 17:25:06,735 INFO    MainThread:11423 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 1
+2022-07-11 17:25:06,736 INFO    MainThread:11423 [wandb_run.py:_restore():1834] restore
+2022-07-11 17:25:08,768 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 729
+  total_bytes: 729
+}
+
+2022-07-11 17:25:08,921 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 729
+  total_bytes: 729
+}
+
+2022-07-11 17:25:09,715 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 729
+  total_bytes: 729
+}
+
+2022-07-11 17:25:09,821 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 729
+  total_bytes: 8538
+}
+
+2022-07-11 17:25:09,927 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 8538
+  total_bytes: 8538
+}
+
+2022-07-11 17:25:10,033 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 8538
+  total_bytes: 8538
+}
+
+2022-07-11 17:25:10,139 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 8538
+  total_bytes: 8538
+}
+
+2022-07-11 17:25:10,245 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 8538
+  total_bytes: 8538
+}
+
+2022-07-11 17:25:10,351 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 8538
+  total_bytes: 8538
+}
+
+2022-07-11 17:25:10,666 INFO    MainThread:11423 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 8538
+  total_bytes: 8538
+}
+local_info {
+}
+
+2022-07-11 17:25:11,774 INFO    MainThread:11423 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-07-11 17:25:11,775 INFO    MainThread:11423 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-07-11 17:25:11,776 INFO    MainThread:11423 [wandb_run.py:_footer_sync_info():3055] logging synced files

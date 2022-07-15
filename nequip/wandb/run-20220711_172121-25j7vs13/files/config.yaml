@@ -1,0 +1,270 @@
+wandb_version: 1
+
+BesselBasis_trainable:
+  desc: null
+  value: true
+PolynomialCutoff_p:
+  desc: null
+  value: 6
+_jit_bailout_depth:
+  desc: null
+  value: 2
+_jit_fusion_strategy:
+  desc: null
+  value:
+  - - DYNAMIC
+    - 3
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.12
+    start_time: 1657574481
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 13
+      - 14
+      - 16
+      4: 3.9.12
+      5: 0.12.21
+      8:
+      - 5
+allow_tf32:
+  desc: null
+  value: false
+append:
+  desc: null
+  value: true
+avg_num_neighbors:
+  desc: null
+  value: auto
+batch_size:
+  desc: null
+  value: 5
+chemical_symbols:
+  desc: null
+  value:
+  - H
+  - C
+code_commits:
+  desc: null
+  value: {}
+dataset:
+  desc: null
+  value: ase
+dataset_file_name:
+  desc: null
+  value: molecules/bvl_bvl/rxn1/TS_MD/bvl_bvl_rxn1_energy_only.extxyz
+dataset_seed:
+  desc: null
+  value: 456
+dataset_statistics_stride:
+  desc: null
+  value: 1
+dataset_url:
+  desc: null
+  value: null
+default_dtype:
+  desc: null
+  value: float32
+e3nn_version:
+  desc: null
+  value: 0.5.0
+early_stopping_lower_bounds:
+  desc: null
+  value:
+    LR: 1.0e-05
+early_stopping_patiences:
+  desc: null
+  value:
+    validation_loss: 50
+ema_decay:
+  desc: null
+  value: 0.99
+ema_use_num_updates:
+  desc: null
+  value: true
+equivariance_test:
+  desc: null
+  value: false
+grad_anomaly_mode:
+  desc: null
+  value: false
+invariant_layers:
+  desc: null
+  value: 2
+invariant_neurons:
+  desc: null
+  value: 64
+key_mapping:
+  desc: null
+  value:
+    E: total_energy
+    R: pos
+    z: atomic_numbers
+l_max:
+  desc: null
+  value: 1
+learning_rate:
+  desc: null
+  value: 0.005
+log_batch_freq:
+  desc: null
+  value: 10
+log_epoch_freq:
+  desc: null
+  value: 1
+loss_coeffs:
+  desc: null
+  value:
+    total_energy:
+    - 1
+    - PerAtomMSELoss
+lr_scheduler_factor:
+  desc: null
+  value: 0.5
+lr_scheduler_name:
+  desc: null
+  value: ReduceLROnPlateau
+lr_scheduler_patience:
+  desc: null
+  value: 100
+max_epochs:
+  desc: null
+  value: 1000
+metrics_components:
+  desc: null
+  value:
+  - - total_energy
+    - mae
+  - - total_energy
+    - mae
+    - PerAtom: true
+metrics_key:
+  desc: null
+  value: validation_loss
+model_builders:
+  desc: null
+  value:
+  - SimpleIrrepsConfig
+  - EnergyModel
+  - PerSpeciesRescale
+  - ForceOutput
+  - RescaleEnergyEtc
+model_debug_mode:
+  desc: null
+  value: false
+n_train:
+  desc: null
+  value: 707
+n_val:
+  desc: null
+  value: 303
+nequip_version:
+  desc: null
+  value: 0.5.5
+nonlinearity_gates:
+  desc: null
+  value:
+    e: silu
+    o: tanh
+nonlinearity_scalars:
+  desc: null
+  value:
+    e: silu
+    o: tanh
+nonlinearity_type:
+  desc: null
+  value: gate
+npz_fixed_field_keys:
+  desc: null
+  value:
+  - atomic_numbers
+num_basis:
+  desc: null
+  value: 8
+num_features:
+  desc: null
+  value: 64
+num_layers:
+  desc: null
+  value: 4
+optimizer_amsgrad:
+  desc: null
+  value: false
+optimizer_name:
+  desc: null
+  value: Adam
+parity:
+  desc: null
+  value: true
+per_species_rescale_scales:
+  desc: null
+  value: dataset_forces_rms
+per_species_rescale_scales_trainable:
+  desc: null
+  value: false
+per_species_rescale_shifts:
+  desc: null
+  value: dataset_per_atom_total_energy_mean
+per_species_rescale_shifts_trainable:
+  desc: null
+  value: false
+r_max:
+  desc: null
+  value: 4.0
+report_init_validation:
+  desc: null
+  value: true
+root:
+  desc: null
+  value: results/bvl_bvl_rxn1/energy_only
+run_name:
+  desc: null
+  value: bvl_bvl_rxn1_energy_only
+save_checkpoint_freq:
+  desc: null
+  value: -1
+save_ema_checkpoint_freq:
+  desc: null
+  value: -1
+seed:
+  desc: null
+  value: 123
+shuffle:
+  desc: null
+  value: true
+torch_version:
+  desc: null
+  value: 1.12.0
+train_val_split:
+  desc: null
+  value: random
+use_ema:
+  desc: null
+  value: true
+use_sc:
+  desc: null
+  value: true
+verbose:
+  desc: null
+  value: info
+wandb:
+  desc: null
+  value: true
+wandb_project:
+  desc: null
+  value: bvl_bvl_rxn1

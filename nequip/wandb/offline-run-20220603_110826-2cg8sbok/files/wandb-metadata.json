@@ -1,0 +1,23 @@
+{
+    "os": "macOS-12.3.1-x86_64-i386-64bit",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-06-03T15:08:26.670137",
+    "startedAt": "2022-06-03T15:08:26.192533",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "configs/example.yaml"
+    ],
+    "state": "running",
+    "program": "/opt/anaconda3/envs/MD/bin/nequip-train",
+    "git": {
+        "remote": "https://github.com/mir-group/nequip.git",
+        "commit": "9bd9e3027b8756ea2ab2d50d0b8396694962d2a5"
+    },
+    "email": null,
+    "root": "/Users/nhattrup/Documents/Gomes_Golder/nequip",
+    "host": "gpggrp-shannon.wifi.local.cmu.edu",
+    "username": "nhattrup",
+    "executable": "/opt/anaconda3/envs/MD/bin/python3.1"
+}

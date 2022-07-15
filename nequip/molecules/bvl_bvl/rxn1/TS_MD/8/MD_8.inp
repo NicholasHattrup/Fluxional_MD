@@ -1,0 +1,11 @@
+!MD PBE0 D3 def2-TZVP PAL8
+%md
+  initvel 500_K
+  timestep 0.5_fs
+  thermostat berendsen 500_K timecon 10.0_fs
+  dump position stride 1 filename "IMAGE_8_trajectory_500K.xyz"
+  dump force stride 1 filename "IMAGE_8_forces_500K.xyz"
+  Restart IfExists
+  run 100
+end
+*xyzfile 0 1 IMAGE_8.xyz

@@ -1,0 +1,7 @@
+!PBE DEF2-SVP D3 NEB-TS FREQ
+%PAL NPROCS 16 END
+%NEB NEB_END_XYZFILE "bvl_bpin2_rxn1_prod.xyz" 
+     NEB_TS_XYZFILE "bvl_bpin2_rxn1_TSguess.xyz"
+END
+* XYZfile 0 1 bvl_bpin2.xyz
+

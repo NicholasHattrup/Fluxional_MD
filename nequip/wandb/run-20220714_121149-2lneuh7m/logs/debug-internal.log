@@ -1,0 +1,130 @@
+2022-07-14 12:11:50,280 INFO    MainThread:48166 [internal.py:wandb_internal():90] W&B internal server running at pid: 48166, started at: 2022-07-14 12:11:50.280600
+2022-07-14 12:11:50,283 INFO    WriterThread:48166 [datastore.py:open_for_write():75] open: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/run-2lneuh7m.wandb
+2022-07-14 12:11:50,284 DEBUG   SenderThread:48166 [sender.py:send():236] send: header
+2022-07-14 12:11:50,284 DEBUG   SenderThread:48166 [sender.py:send():236] send: run
+2022-07-14 12:11:50,285 INFO    SenderThread:48166 [sender.py:_maybe_setup_resume():493] checking resume status for None/bvl_bvl_bpin2_rxn1/2lneuh7m
+2022-07-14 12:11:50,514 INFO    SenderThread:48166 [sender.py:_maybe_setup_resume():556] configured resuming with: ResumeState(resumed=True,step=1000,history=1000,events=8103,output=27889,runtime=261386,wandb_runtime=242248,summary={'training_loss_f': 0.00032876705517992377, 'validation_f_rmse': 0.0004014763690065593, 'validation_B_f_rmse': 0.00028024057974107563, 'validation_psavg_f_mae': 0.00018949976947624236, 'validation_loss': 0.00011162170994793996, 'training_C_f_mae': 0.0005408783908933401, 'validation_e_mae': 0.0002578382845968008, 'training_B_f_rmse': 0.0005925421719439328, 'training_e_mae': 0.0019462192431092264, 'validation_psavg_f_rmse': 0.0003672698512673378, 'training_f_rmse': 0.0006885186885483563, 'validation_loss_f': 0.00011159526911797002, 'validation_H_f_mae': 0.00017278859741054475, 'validation_e/N_mae': 4.297304712963523e-06, 'training_psavg_f_mae': 0.0004556515486910939, 'training_loss': 0.00033013749634847045, 'training_B_f_mae': 0.0004461625649128109, 'training_H_f_mae': 0.0003774142533075064, 'training_e/N_mae': 3.2436968467663974e-05, 'validation_B_f_mae': 0.00018771205213852227, 'validation_C_f_rmse': 0.00039886494050733745, 'wall': 242247.250029709, 'epoch': 1000, 'cumulative_wall': 261413.64892020897, 'training_O_f_mae': 0.00045815095654688776, 'training_C_f_rmse': 0.0007421741611324251, 'validation_O_f_mae': 0.0001968086726265028, 'validation_H_f_rmse': 0.0004124542756471783, 'validation_O_f_rmse': 0.00037751958006992936, 'LR': 0.005, '_runtime': 261383, '_timestamp': 1657815099, 'training_H_f_rmse': 0.0006566435331478715, 'training_O_f_rmse': 0.0006755315698683262, 'validation_loss_e': 2.644463314993573e-08, 'validation_C_f_mae': 0.00020068978483323008, 'training_psavg_f_rmse': 0.0006667228881269693, '_step': 999, '_wandb': {'runtime': 242248}, 'training_f_mae': 0.0004450252454262227, 'training_loss_e': 1.3705171113542749e-06, 'validation_f_mae': 0.0001851178385550156},config={'root': {'desc': None, 'value': 'results/bvl_bpin2_rxn1'}, 'seed': {'desc': None, 'value': 123}, 'l_max': {'desc': None, 'value': 1}, 'n_val': {'desc': None, 'value': 303}, 'r_max': {'desc': None, 'value': 4}, 'wandb': {'desc': None, 'value': True}, '_wandb': {'desc': None, 'value': {'t': {'1': [1, 5, 53, 55], '2': [1, 5, 53, 55], '3': [5, 14], '4': '3.9.12', '5': '0.12.21', '8': [5]}, 'framework': 'torch', 'start_time': 1657572852, 'cli_version': '0.12.21', 'is_jupyter_run': False, 'python_version': '3.9.12', 'is_kaggle_kernel': False}}, 'append': {'desc': None, 'value': True}, 'parity': {'desc': None, 'value': True}, 'use_sc': {'desc': None, 'value': True}, 'dataset': {'desc': None, 'value': 'ase'}, 'n_train': {'desc': None, 'value': 707}, 'shuffle': {'desc': None, 'value': True}, 'use_ema': {'desc': None, 'value': True}, 'verbose': {'desc': None, 'value': 'info'}, 'run_name': {'desc': None, 'value': 'bvl_bpin2_rxn1'}, 'ema_decay': {'desc': None, 'value': 0.99}, 'num_basis': {'desc': None, 'value': 8}, 'allow_tf32': {'desc': None, 'value': False}, 'batch_size': {'desc': None, 'value': 5}, 'max_epochs': {'desc': None, 'value': 1000}, 'num_layers': {'desc': None, 'value': 4}, 'dataset_url': {'desc': None, 'value': None}, 'key_mapping': {'desc': None, 'value': {'E': 'total_energy', 'F': 'forces', 'R': 'pos', 'z': 'atomic_numbers'}}, 'loss_coeffs': {'desc': None, 'value': {'forces': 1, 'total_energy': [1, 'PerAtomMSELoss']}}, 'metrics_key': {'desc': None, 'value': 'validation_loss'}, 'num_weights': {'desc': None, 'value': 598312}, 'code_commits': {'desc': None, 'value': {}}, 'dataset_seed': {'desc': None, 'value': 456}, 'e3nn_version': {'desc': None, 'value': '0.5.0'}, 'num_features': {'desc': None, 'value': 64}, 'default_dtype': {'desc': None, 'value': 'float32'}, 'learning_rate': {'desc': None, 'value': 0.005}, 'torch_version': {'desc': None, 'value': '1.12.0'}, 'wandb_project': {'desc': None, 'value': 'bvl_bvl_bpin2_rxn1'}, 'log_batch_freq': {'desc': None, 'value': 10}, 'log_epoch_freq': {'desc': None, 'value': 1}, 'model_builders': {'desc': None, 'value': ['SimpleIrrepsConfig', 'EnergyModel', 'PerSpeciesRescale', 'ForceOutput', 'RescaleEnergyEtc']}, 'nequip_version': {'desc': None, 'value': '0.5.5'}, 'optimizer_name': {'desc': None, 'value': 'Adam'}, 'train_val_split': {'desc': None, 'value': 'random'}, 'chemical_symbols': {'desc': None, 'value': ['H', 'B', 'C', 'O']}, 'invariant_layers': {'desc': None, 'value': 2}, 'model_debug_mode': {'desc': None, 'value': False}, 'avg_num_neighbors': {'desc': None, 'value': 'auto'}, 'dataset_file_name': {'desc': None, 'value': 'molecules/bvl_bpin2/rxn1/TS_MD/bvl_bpin2_training.extxyz'}, 'equivariance_test': {'desc': None, 'value': False}, 'grad_anomaly_mode': {'desc': None, 'value': False}, 'invariant_neurons': {'desc': None, 'value': 64}, 'lr_scheduler_name': {'desc': None, 'value': 'ReduceLROnPlateau'}, 'nonlinearity_type': {'desc': None, 'value': 'gate'}, 'optimizer_amsgrad': {'desc': None, 'value': False}, 'PolynomialCutoff_p': {'desc': None, 'value': 6}, '_jit_bailout_depth': {'desc': None, 'value': 2}, 'metrics_components': {'desc': None, 'value': [['forces', 'mae'], ['forces', 'rmse'], ['forces', 'mae', {'PerSpecies': True, 'report_per_component': False}], ['forces', 'rmse', {'PerSpecies': True, 'report_per_component': False}], ['total_energy', 'mae'], ['total_energy', 'mae', {'PerAtom': True}]]}, 'nonlinearity_gates': {'desc': None, 'value': {'e': 'silu', 'o': 'tanh'}}, 'ema_use_num_updates': {'desc': None, 'value': True}, 'lr_scheduler_factor': {'desc': None, 'value': 0.5}, '_jit_fusion_strategy': {'desc': None, 'value': [['DYNAMIC', 3]]}, 'nonlinearity_scalars': {'desc': None, 'value': {'e': 'silu', 'o': 'tanh'}}, 'npz_fixed_field_keys': {'desc': None, 'value': ['atomic_numbers']}, 'save_checkpoint_freq': {'desc': None, 'value': -1}, 'BesselBasis_trainable': {'desc': None, 'value': True}, 'lr_scheduler_patience': {'desc': None, 'value': 100}, 'report_init_validation': {'desc': None, 'value': True}, 'early_stopping_patiences': {'desc': None, 'value': {'validation_loss': 50}}, 'save_ema_checkpoint_freq': {'desc': None, 'value': -1}, 'dataset_statistics_stride': {'desc': None, 'value': 1}, 'per_species_rescale_scales': {'desc': None, 'value': 'dataset_forces_rms'}, 'per_species_rescale_shifts': {'desc': None, 'value': 'dataset_per_atom_total_energy_mean'}, 'early_stopping_lower_bounds': {'desc': None, 'value': {'LR': 1e-05}}, 'per_species_rescale_scales_trainable': {'desc': None, 'value': False}, 'per_species_rescale_shifts_trainable': {'desc': None, 'value': False}})
+2022-07-14 12:11:50,771 INFO    SenderThread:48166 [dir_watcher.py:__init__():216] watching files in: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files
+2022-07-14 12:11:50,771 INFO    SenderThread:48166 [sender.py:_start_run_threads():815] run started: 2lneuh7m with start time 1657553723
+2022-07-14 12:11:50,779 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: check_version
+2022-07-14 12:11:50,779 DEBUG   SenderThread:48166 [sender.py:send():236] send: summary
+2022-07-14 12:11:50,780 INFO    SenderThread:48166 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-14 12:11:50,780 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: check_version
+2022-07-14 12:11:50,863 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: run_start
+2022-07-14 12:11:50,885 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-14 12:11:50,886 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: stop_status
+2022-07-14 12:11:51,007 DEBUG   SenderThread:48166 [sender.py:send():236] send: telemetry
+2022-07-14 12:11:51,777 INFO    Thread-7  :48166 [dir_watcher.py:_on_file_created():269] file/dir created: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/wandb-summary.json
+2022-07-14 12:11:51,778 INFO    Thread-7  :48166 [dir_watcher.py:_on_file_created():269] file/dir created: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/output.log
+2022-07-14 12:11:52,475 DEBUG   SenderThread:48166 [sender.py:send():236] send: config
+2022-07-14 12:11:52,481 DEBUG   SenderThread:48166 [sender.py:send():236] send: telemetry
+2022-07-14 12:11:54,948 DEBUG   SenderThread:48166 [sender.py:send():236] send: exit
+2022-07-14 12:11:54,948 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:54,948 INFO    SenderThread:48166 [sender.py:send_exit():372] handling exit code: 1
+2022-07-14 12:11:54,949 INFO    SenderThread:48166 [sender.py:send_exit():374] handling runtime: 242252
+2022-07-14 12:11:54,950 INFO    SenderThread:48166 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-14 12:11:54,950 INFO    SenderThread:48166 [sender.py:send_exit():380] send defer
+2022-07-14 12:11:54,951 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:54,951 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:54,952 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 0
+2022-07-14 12:11:54,952 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:54,952 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-07-14 12:11:54,952 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 1
+2022-07-14 12:11:54,952 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:54,952 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 1
+2022-07-14 12:11:55,030 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,031 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-07-14 12:11:55,031 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 2
+2022-07-14 12:11:55,031 DEBUG   SenderThread:48166 [sender.py:send():236] send: stats
+2022-07-14 12:11:55,032 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:55,032 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 2
+2022-07-14 12:11:55,033 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,033 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-07-14 12:11:55,033 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 3
+2022-07-14 12:11:55,033 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:55,033 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 3
+2022-07-14 12:11:55,034 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,034 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-07-14 12:11:55,034 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 4
+2022-07-14 12:11:55,034 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:55,034 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 4
+2022-07-14 12:11:55,035 DEBUG   SenderThread:48166 [sender.py:send():236] send: summary
+2022-07-14 12:11:55,037 INFO    SenderThread:48166 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-14 12:11:55,038 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,038 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-07-14 12:11:55,038 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 5
+2022-07-14 12:11:55,038 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:55,038 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 5
+2022-07-14 12:11:55,038 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,039 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-07-14 12:11:55,056 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:55,276 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 6
+2022-07-14 12:11:55,277 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:55,277 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:55,277 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 6
+2022-07-14 12:11:55,278 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,278 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-07-14 12:11:55,278 INFO    SenderThread:48166 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-07-14 12:11:55,380 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:55,790 INFO    Thread-7  :48166 [dir_watcher.py:_on_file_modified():286] file/dir modified: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/wandb-summary.json
+2022-07-14 12:11:55,791 INFO    SenderThread:48166 [dir_watcher.py:_on_file_modified():286] file/dir modified: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/output.log
+2022-07-14 12:11:55,792 INFO    SenderThread:48166 [dir_watcher.py:_on_file_modified():286] file/dir modified: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/config.yaml
+2022-07-14 12:11:55,792 INFO    SenderThread:48166 [dir_watcher.py:finish():383] scan: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files
+2022-07-14 12:11:55,793 INFO    SenderThread:48166 [dir_watcher.py:finish():397] scan save: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/output.log output.log
+2022-07-14 12:11:55,793 INFO    SenderThread:48166 [dir_watcher.py:finish():397] scan save: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/config.yaml config.yaml
+2022-07-14 12:11:55,798 INFO    SenderThread:48166 [dir_watcher.py:finish():397] scan save: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/wandb-summary.json wandb-summary.json
+2022-07-14 12:11:55,798 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 7
+2022-07-14 12:11:55,804 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:55,805 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:55,811 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 7
+2022-07-14 12:11:55,813 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:55,813 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-07-14 12:11:55,814 INFO    SenderThread:48166 [file_pusher.py:finish():171] shutting down file pusher
+2022-07-14 12:11:55,914 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:55,915 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,017 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,017 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,125 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,125 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,232 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,233 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,340 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,341 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,372 INFO    Thread-11 :48166 [upload_job.py:push():138] Uploaded file /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/output.log
+2022-07-14 12:11:56,378 INFO    Thread-13 :48166 [upload_job.py:push():138] Uploaded file /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/wandb-summary.json
+2022-07-14 12:11:56,390 INFO    Thread-12 :48166 [upload_job.py:push():138] Uploaded file /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/files/config.yaml
+2022-07-14 12:11:56,448 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,449 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,557 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,558 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,596 INFO    Thread-6  :48166 [sender.py:transition_state():393] send defer: 8
+2022-07-14 12:11:56,597 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:56,597 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 8
+2022-07-14 12:11:56,598 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:56,598 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-07-14 12:11:56,662 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:56,958 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 9
+2022-07-14 12:11:56,958 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:56,958 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:56,959 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 9
+2022-07-14 12:11:56,959 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:56,959 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-07-14 12:11:56,959 INFO    SenderThread:48166 [sender.py:transition_state():393] send defer: 10
+2022-07-14 12:11:56,960 DEBUG   SenderThread:48166 [sender.py:send():236] send: final
+2022-07-14 12:11:56,960 DEBUG   SenderThread:48166 [sender.py:send():236] send: footer
+2022-07-14 12:11:56,960 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: defer
+2022-07-14 12:11:56,960 INFO    HandlerThread:48166 [handler.py:handle_request_defer():163] handle defer: 10
+2022-07-14 12:11:56,960 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: defer
+2022-07-14 12:11:56,960 INFO    SenderThread:48166 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-07-14 12:11:57,061 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-14 12:11:57,062 DEBUG   SenderThread:48166 [sender.py:send_request():250] send_request: poll_exit
+2022-07-14 12:11:57,062 INFO    SenderThread:48166 [file_pusher.py:join():176] waiting for file pusher
+2022-07-14 12:11:57,454 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: sampled_history
+2022-07-14 12:11:57,455 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: get_summary
+2022-07-14 12:11:57,458 DEBUG   HandlerThread:48166 [handler.py:handle_request():140] handle_request: shutdown
+2022-07-14 12:11:57,458 INFO    HandlerThread:48166 [handler.py:finish():806] shutting down handler
+2022-07-14 12:11:57,965 INFO    WriterThread:48166 [datastore.py:close():279] close: /Users/nhattrup/Documents/research/Fluxional_MD/nequip/wandb/run-20220714_121149-2lneuh7m/run-2lneuh7m.wandb
+2022-07-14 12:11:58,352 INFO    SenderThread:48166 [sender.py:finish():1114] shutting down sender
+2022-07-14 12:11:58,352 INFO    SenderThread:48166 [file_pusher.py:finish():171] shutting down file pusher
+2022-07-14 12:11:58,352 INFO    SenderThread:48166 [file_pusher.py:join():176] waiting for file pusher
+2022-07-14 12:11:58,356 INFO    MainThread:48166 [internal.py:handle_exit():80] Internal process exited

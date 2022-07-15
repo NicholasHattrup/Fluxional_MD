@@ -1,0 +1,17 @@
+ase_args:
+  index: ':'
+dtype: torch.float32
+extra_fixed_fields:
+  r_max: 4.0
+file_name: ./benchmark_data/nequip-data.extxyz
+force_fixed_keys: !!set {}
+include_frames: null
+include_keys: null
+key_mapping:
+  E: total_energy
+  F: forces
+  R: pos
+  z: atomic_numbers
+nequip_version: 0.5.4
+root: results/bvl_bvl_rxn1
+url: null

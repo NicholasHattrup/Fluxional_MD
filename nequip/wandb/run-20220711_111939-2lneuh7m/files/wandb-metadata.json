@@ -1,0 +1,23 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-07-11T15:19:39.884984",
+    "startedAt": "2022-07-11T15:19:39.067185",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "configs/bvl_bpin2_rxn1.yaml"
+    ],
+    "state": "running",
+    "program": "/opt/anaconda3/envs/nequip/bin/nequip-train",
+    "git": {
+        "remote": "https://github.com/mir-group/nequip.git",
+        "commit": "9bd9e3027b8756ea2ab2d50d0b8396694962d2a5"
+    },
+    "email": null,
+    "root": "/Users/nhattrup/Documents/research/Gomes_Golder/nequip",
+    "host": "GPGGRP-SHANNON.CHEME.CMU.EDU",
+    "username": "nhattrup",
+    "executable": "/opt/anaconda3/envs/nequip/bin/python"
+}
