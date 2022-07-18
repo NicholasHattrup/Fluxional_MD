@@ -8,11 +8,14 @@ Implementation by Jan H. Jensen, based on the paper
     DOI: 10.1002/bkcs.10334
 """
 
+from calendar import c
 import copy
 import itertools
 
 from rdkit.Chem import rdmolops
 from rdkit.Chem import rdchem
+import argparse
+
 try:
     from rdkit.Chem import rdEHTTools #requires RDKit 2019.9.1 or later
 except ImportError:
@@ -268,7 +271,7 @@ def BO2mol(mol, BO_matrix, atoms, atomic_valence_electrons,
 
 
 
-def BO2graph(BO_matrix, atoms, atom_valence_electrons, charge, allow_charged_framents=True, use_atoms_maps=False):
+def BO2graph(BO_matrix, atoms, atom_valence_electrons, charge, allow_charged_framents=True, use_atoms_maps=False, detect_aromaticity=True):
     l= len(BO_matrix)
     l2 = len(atoms)
     BO_valences = list(BO_matrix.sum(axis=1))
@@ -283,8 +286,10 @@ def BO2graph(BO_matrix, atoms, atom_valence_electrons, charge, allow_charged_fra
     }
 
     mol_graph = nx.Graph()
-    mol_graph.add_nodes_from([n for n in range(len(atoms))])
+    pt = Chem.GetPeriodicTable()
 
+    for n in range(len(atoms)):
+        mol_graph.add_node(n, symbol=pt.GetElementSymbol(atoms[n]))
 
     for i in range(l):
         for j in range(i + 1, l):
@@ -293,6 +298,9 @@ def BO2graph(BO_matrix, atoms, atom_valence_electrons, charge, allow_charged_fra
                 continue
             bt = bondTypeDict.get(bo, Chem.BondType.SINGLE)
             mol_graph.add_edge(i, j, bondtype=str(bt))
+
+    if detect_aromaticity:
+        mol_graph = set_aromaticity(mol_graph)
 
     return mol_graph
 
@@ -304,30 +312,37 @@ def edges2path(edges):
     edges.pop(0)
     path = [u, v]
     while True:
+        cont = False
         for n in range(len(edges)):
             w, k = edges[n]
             if w == u: 
                 u = k 
                 path.insert(0, k)
                 edges.remove((w,k))
+                cont = True
                 break 
             elif w == v:
                 v = k 
                 path.append(k)
                 edges.remove((w,k))
+                cont = True
                 break 
             elif k == u:
                 u = w 
                 path.insert(0, w)
                 edges.remove((w,k))
+                cont = True
                 break 
             elif k == v:
                 v = w 
                 path.append(w)
                 edges.remove((w,k))
+                cont = True
                 break 
         if not edges:
             break
+        if not cont:
+            return None
     return path[1:] # First and last element are the same, so just return one occurance of that element
 
     
@@ -336,25 +351,28 @@ def edges2path(edges):
 
 
 def combine_cycles(cycles):
+    cycles = list(cycles)
+    #print(cycles)
     # Given a list of n binary cycles 
     # Determines if combining them yields a valid new cycle
     # This is determined via the XOR and AND operators
     cycle_to_build = cycles[0] # Start building with first cycle 
     cycles_to_use = cycles[1:]
-    while not cycles_to_use is None:
-        valid = False 
-        for cycle in cycles_to_use:
-            if np.logical_and(cycle_to_build, cycle).sum():
+    while cycles_to_use:
+        build = False 
+        for n in range(len(cycles_to_use)):
+            if np.logical_and(cycle_to_build, cycles_to_use[n]).sum():
             # If the new cylce will result in a valid structure ... build it!
-                cycle_to_build = np.logical_xor(cycle_to_build, cycle).astype(int)
-                if isinstance(cycles_to_use, tuple):
-                    cycles_to_use = None
-                else:
-                    cycles_to_use.remove(cycle)
-                valid = True 
+                cycle_to_build = np.logical_xor(cycle_to_build, cycles_to_use[n]).astype(int)
+                cycles_to_use.pop(n)
+                build = True 
                 break 
-        if not valid:
-            return None 
+            else:
+                continue 
+        if not build:
+            return None
+    #print(cycle_to_build)
+   # print(bin2cycle)
     return cycle_to_build
 
         
@@ -370,7 +388,7 @@ def bin2cycle(bin, edges):
     path = edges2path(edges4path)
     # It is labeled path, but really just returns all node in the represented cycle 
     #exit()
-    return sorted(path)
+    return path
 
 
 
@@ -415,33 +433,28 @@ def find_cycles(mol_graph):
         for cycle in cycles:
             cycle_combinations.append(cycle)
 
+
     for cycles in cycle_combinations:
         bin_cycle = combine_cycles(cycles)
         if bin_cycle is None:
             continue 
         built_cycle = bin2cycle(bin_cycle, edges)
-        print(cycles, built_cycle)
         simple_cycles.append(built_cycle)
             
     return simple_cycles
 
-def get_cycle_edges(mol_graph, cycle):
-    edges = [mol_graph.get_edge_data(cycle[-1], cycle[0])]
-    for n in range(len(cycle)-1):
-        edges.append(mol_graph.get_edge_data(cycle[n], cycle[n+1]))
-    return edges
-
-
 # Given a cycle in a molecular graph detect if it is aromatic via the 4n+2 rule
-def is_aromatic(mol_graph, cycle):
-    edges = get_cycle_edges(mol_graph, cycle)
+# Follows path to determine if the ring is aromatic 
+def is_aromatic(mol_graph, ring):
+    edges = [mol_graph.get_edge_data(ring[n], ring[n+1]) for n in range(len(ring) -1)]
+    edges.append(mol_graph.get_edge_data(ring[-1], ring[0])) 
     pi_electrons = 0
     for edge in edges:
         # Cannot have a triple bond in a cycle 
         if edge['bondtype'] == str(Chem.BondType.DOUBLE):
             pi_electrons += 2
         elif edge['bondtype'] == str(Chem.BondType.AROMATIC):
-            pi_electrons += 1 
+            pi_electrons += 2
     return (pi_electrons - 2) % 4 == 0
  
         
@@ -785,6 +798,20 @@ def xyz2AC_huckel(atomicNumList, xyz, charge):
     return AC, mol
 
 
+def set_aromaticity(graph):
+     # Find all rings in the graph 
+    rings = find_cycles(graph)
+
+    for ring in rings:
+        if is_aromatic(graph, ring):
+            edges = [(ring[n], ring[n+1]) for n in range(len(ring) -1)]
+            edges.append((ring[-1], ring[0])) 
+            for u, v in edges:
+                graph.add_edge(u, v, bondtype=str(Chem.BondType.AROMATIC))
+    return graph
+
+
+
 
 
 def main():
@@ -794,8 +821,6 @@ def main():
 
 
 if __name__ == "__main__":
-
-    import argparse
 
     parser = argparse.ArgumentParser(usage='%(prog)s [options] molecule.xyz')
     parser.add_argument('structure', metavar='structure', type=str)
@@ -826,6 +851,10 @@ if __name__ == "__main__":
         metavar="int",
         type=int,
         help="Total charge of the system")
+    
+    parser.add_argument('--aromaticity',
+        action="store_true",
+        help="Detect and set aromatic bonds")
 
     args = parser.parse_args()
 
@@ -839,6 +868,9 @@ if __name__ == "__main__":
     # if you don't want to install networkx set quick=False and
     # uncomment 'import networkx as nx' at the top of the file
     quick = not args.no_graph
+
+
+    detect_aromaticity = not args.aromaticity
 
     # chiral comment
     embed_chiral = not args.ignore_chiral
@@ -866,23 +898,14 @@ if __name__ == "__main__":
         use_graph=quick)
 
     # Generate molecular graph
-    mol_graph = BO2graph(BO, atoms, atomic_valence_electrons, charge, allow_charged_framents=charged_fragments, use_atoms_maps=False)
+    mol_graph = BO2graph(BO_matrix=BO, atoms=atoms, atom_valence_electrons=atomic_valence_electrons, charge=charge, allow_charged_framents=charged_fragments, use_atoms_maps=False, detect_aromaticity=detect_aromaticity)
 
-    # Find all rings in the graph 
-    rings = find_cycles(mol_graph)
 
-    print(rings)
 
-    print(len(rings))
-   
-    exit()
-    for ring in rings:
-        break
-        if is_aromatic(mol_graph, ring):
-            edges = get_cycle_edges(mol_graph, ring)
-            for edge in edges:
-                #mol_graph.add_edge(edge[0], edge[1], bondtype='AROMATIC')
-                continue 
+    print(mol_graph.edges(data=True))
+
+
+    
             
 
 
