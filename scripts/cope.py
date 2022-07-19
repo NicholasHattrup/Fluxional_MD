@@ -59,41 +59,61 @@ def mol_to_edit(mol, indices, rxn='cope'):
 
 # bvl_bvl smiles 
 
-#bvl_bvl = Chem.MolFromSmiles('[C@H]12C=C[C@H]3[C@@H](C(C4=C[C@H]5[C@H]6C=C[C@@H]4C=C[C@@H]56)=C2)[C@H]3C=C1')
-#bvl_bvl = Chem.AddHs(bvl_bvl)
+bvl_bvl = Chem.MolFromSmiles('[C@H]12C=C[C@H]3[C@@H](C(C4=C[C@H]5[C@H]6C=C[C@@H]4C=C[C@@H]56)=C2)[C@H]3C=C1')
+bvl_bvl = Chem.AddHs(bvl_bvl)
 
-bvl = Chem.MolFromSmiles('C1=CC2C3C2C=CC1C=C3')
-bvl = Chem.AddHs(bvl)
+#bvl = Chem.MolFromSmiles('C1=CC2C3C2C=CC1C=C3')
+#bvl = Chem.AddHs(bvl)
 
 # Three structures that enable cope rearrangments 
 substruct_1 = Chem.MolFromSmarts('C=CCCC=C') #Structure one reacts to reform itself 
 substruct_3 = Chem.MolFromSmarts('C=CC=CC=C')
 
 
+# Get all cope rearrangments
+def get_copes(mol):
+    # Three structures that enable cope rearrangments 
+    substruct_1 = Chem.MolFromSmarts('C=CCCC=C') #Structure one reacts to reform itself 
+    substruct_3 = Chem.MolFromSmarts('C=CC=CC=C')
+    cope_2_pi = None
+    if bvl_bvl.HasSubstructMatch(substruct_1):
+        cope_2_pi = bvl_bvl.GetSubstructMatches(substruct_1)
 
-# Make list of cope rearrangments that form and don't form cylic structures
-cope_2_pi = None
-if bvl.HasSubstructMatch(substruct_1):
-    cope_2_pi = bvl.GetSubstructMatches(substruct_1)
+    cope_3_pi = None
+    if bvl_bvl.HasSubstructMatch(substruct_3):
+        cope_3_pi = bvl_bvl.GetSubstructMatches(substruct_3)
 
-cope_3_pi = None
-if bvl.HasSubstructMatch(substruct_3):
-    cope_3_pi = bvl.GetSubstructMatches(substruct_3)
+    all_copes = []
+    if cope_2_pi:
+        all_copes.extend(cope_2_pi)
+    if cope_3_pi:
+        all_copes.extend(cope_3_pi)  
+    return all_copes
 
-all_copes = []
-if cope_2_pi:
-    all_copes.extend(cope_2_pi)
-if cope_3_pi:
-    all_copes.extend(cope_3_pi)  
-
-unique_molecules = [Chem.CanonSmiles(Chem.MolToSmiles(bvl))]
+unique_molecules, start, N = [Chem.CanonSmiles(Chem.MolToSmiles(bvl_bvl))], 0, 1
 # With the reacting substructures in the molecule, modify molecule to correspond to rearrangment product
-if all_copes is not None:
-    for atoms in all_copes:
-        bvl_modified = mol_to_edit(bvl, atoms)
-        canonical_smiles = Chem.CanonSmiles(Chem.MolToSmiles(bvl_modified))
-        if canonical_smiles not in unique_molecules:
-            unique_molecules.append(canonical_smiles)
+search = True
+while search:
+    search = False # Assume no new molecules will be found
+    update = True # Update start 
+    for n in range(start, N):
+        cope_rxns = get_copes(bvl_bvl)
+        if cope_rxns is not None:
+            print('Cope rearrangments found! ... Checking reactions generated for unique molecule: ', n + 1)
+            for atoms in cope_rxns:
+                bvl_bvl_modified = mol_to_edit(bvl_bvl, atoms)
+                canonical_smiles = Chem.CanonSmiles(Chem.MolToSmiles(bvl_bvl_modified))
+                if canonical_smiles not in unique_molecules:
+                    N += 1
+                    print("New molecule found! ... Current unique molecules:", N)
+                    # A new molecule found! Continue search from however many starting indexes are found  
+                    unique_molecules.append(canonical_smiles)
+                    if update:
+                        start += 1
+                        update = False
+                    search = True 
+            if not search:
+                print('No new molecules found for unique molecule:', n + 1)
 
 print(len(unique_molecules))
     
