@@ -343,7 +343,7 @@ def edges2path(edges):
             break
         if not cont:
             return None
-    return path[1:] # First and last element are the same, so just return one occurance of that element
+    return path # First and last element are the same, so just return one occurance of that element
 
     
 
@@ -385,7 +385,7 @@ def bin2cycle(bin, edges):
 
     path = []
     edges4path = [edge for n, edge in enumerate(edges) if bin[0,n]]
-    path = edges2path(edges4path)
+    path = edges2path(edges4path)[1:]
     # It is labeled path, but really just returns all node in the represented cycle 
     #exit()
     return path
