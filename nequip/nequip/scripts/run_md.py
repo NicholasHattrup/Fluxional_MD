@@ -105,6 +105,7 @@ def main(args=None):
         "--n-steps", help="Number of steps to run", type=int, default=500000
     )
     parser.add_argument("--nvt-q", type=float, default=43.06225052549201)
+    parser.add_argument("--prefix", type=str, default = "", help="prefix for saving series of files")
     args = parser.parse_args(args=args)
 
     logfilename = os.path.join(args.logdir, f"ase_md_run_{time.time()}.log")
@@ -152,7 +153,7 @@ def main(args=None):
     write_ase_md_config(curr_atoms=atoms, curr_step=0, dt=args.dt)
     logging.info(f"COM [A]: {atoms.get_center_of_mass()}\n")
 
-    save_to_xyz(atoms, logdir=args.logdir, prefix="nvt_")
+    save_to_xyz(atoms, logdir=args.logdir, prefix="nvt_" + args.prefix)
 
     for i in range(1, args.n_steps):
         nvt_dyn.run(steps=1)
@@ -164,7 +165,7 @@ def main(args=None):
 
         # append current structure to xyz file
         if not i % args.save_frequency:
-            save_to_xyz(atoms, logdir=args.logdir, prefix="nvt_")
+            save_to_xyz(atoms, logdir=args.logdir, prefix="nvt_" + args.prefix)
 
     print("finished...")
 

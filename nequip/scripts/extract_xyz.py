@@ -1,8 +1,12 @@
-import sys
+import argparse
 
-file_path = sys.argv[1]
+parser = argparse.ArgumentParser()
+parser.add_argument('--file', type=str, help='Path to Trajectory')
+parser.add_argument('--file_2_write',type=str,help='File to write to')
 
-with open(file_path, 'r') as f:
+args = parser.parse_args()
+
+with open(args.file, 'r') as f:
 	lst = f.read().splitlines()
 
 numAtoms = int(lst[0])
@@ -14,7 +18,7 @@ stop =  numAtoms + 2
 
 
 
-with open('MD.xyz','a') as f:
+with open(args.file_2_write,'a') as f:
 	while frame_num < totalFrames:
 		f.write(lst[0] + '\n')
 		properties = lst[start + 1]
