@@ -9,6 +9,7 @@ import torch
 from ase import units
 from ase.io import read, write
 from ase.md.velocitydistribution import MaxwellBoltzmannDistribution
+from ase.md.langevin import Langevin
 from ase.md.velocitydistribution import Stationary, ZeroRotation
 
 from nequip.ase import NequIPCalculator
@@ -106,8 +107,9 @@ def main(args=None):
     )
     parser.add_argument("--nvt-q", type=float, default=43.06225052549201)
     parser.add_argument("--prefix", type=str, default = "", help="prefix for saving series of files")
-    args = parser.parse_args(args=args)
+    parser.add_argument("--thermostat",type=str, default="nose-hoover", help="Thermostat for running dynamics")
 
+    args = parser.parse_args(args=args)
     logfilename = os.path.join(args.logdir, f"ase_md_run_{time.time()}.log")
 
     np.random.seed(args.seed)
@@ -135,21 +137,33 @@ def main(args=None):
 
     # set starting temperature
     MaxwellBoltzmannDistribution(atoms=atoms, temp=args.temperature * units.kB)
+    ZeroRotation(atoms) # Set center of mass momentum to zero
+    Stationary(atoms) # Set rotation about center of mass zero 
+    if args.thermostat == "nose-hover":
+        nvt_dyn = NoseHoover(
+            atoms=atoms,
+            timestep=args.dt * units.fs,
+            temperature=args.temperature,
+            nvt_q=args.nvt_q,
+        )
+        # log first frame
+        logging.info(
+            f"\n\nStarting dynamics with Nose-Hoover Thermostat with nvt_q: {args.nvt_q}\n\n"
+         )
+    elif args.thermostat =='langevin':
+        print('This line is reached')
+        nvt_dyn = Langevin(
+            atoms=atoms,
+            timestep=args.dt * units.fs,
+            temperature_K=args.temperature,
+            friction=0.02) #Same value used in the dynamics of gaptrain
+        # log first frame
+        logging.info(
+            f"\n\nStarting dynamics with Langevin Thermostat with nvt_q: {args.nvt_q}\n\n"
+        )
+    else:
+        raise Exception("Improper thermostat specified! Supported thermostats are nose-hoover (default) or langevin")
 
-    ZeroRotation(atoms)
-    Stationary(atoms)
-
-    nvt_dyn = NoseHoover(
-        atoms=atoms,
-        timestep=args.dt * units.fs,
-        temperature=args.temperature,
-        nvt_q=args.nvt_q,
-    )
-
-    # log first frame
-    logging.info(
-        f"\n\nStarting dynamics with Nose-Hoover Thermostat with nvt_q: {args.nvt_q}\n\n"
-    )
     write_ase_md_config(curr_atoms=atoms, curr_step=0, dt=args.dt)
     logging.info(f"COM [A]: {atoms.get_center_of_mass()}\n")
 
