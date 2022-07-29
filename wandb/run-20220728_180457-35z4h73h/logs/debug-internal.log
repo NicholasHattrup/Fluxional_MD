@@ -1,0 +1,707 @@
+2022-07-28 18:04:58,038 INFO    MainThread:161442 [internal.py:wandb_internal():90] W&B internal server running at pid: 161442, started at: 2022-07-28 18:04:58.038659
+2022-07-28 18:04:58,039 INFO    WriterThread:161442 [datastore.py:open_for_write():75] open: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/run-35z4h73h.wandb
+2022-07-28 18:04:58,041 DEBUG   SenderThread:161442 [sender.py:send():236] send: header
+2022-07-28 18:04:58,041 DEBUG   SenderThread:161442 [sender.py:send():236] send: run
+2022-07-28 18:04:58,050 INFO    SenderThread:161442 [sender.py:_maybe_setup_resume():493] checking resume status for None/bvl_bvl_rxn1/35z4h73h
+2022-07-28 18:04:58,347 INFO    SenderThread:161442 [dir_watcher.py:__init__():216] watching files in: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files
+2022-07-28 18:04:58,347 INFO    SenderThread:161442 [sender.py:_start_run_threads():815] run started: 35z4h73h with start time 1659045897
+2022-07-28 18:04:58,349 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:04:58,349 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:04:58,349 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: check_version
+2022-07-28 18:04:58,349 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: check_version
+2022-07-28 18:04:58,411 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: run_start
+2022-07-28 18:04:58,414 DEBUG   HandlerThread:161442 [meta.py:__init__():35] meta init
+2022-07-28 18:04:58,414 DEBUG   HandlerThread:161442 [meta.py:__init__():49] meta init done
+2022-07-28 18:04:58,414 DEBUG   HandlerThread:161442 [meta.py:probe():209] probe
+2022-07-28 18:04:58,421 DEBUG   HandlerThread:161442 [meta.py:_setup_git():199] setup git
+2022-07-28 18:04:58,429 DEBUG   HandlerThread:161442 [meta.py:_setup_git():206] setup git done
+2022-07-28 18:04:58,429 DEBUG   HandlerThread:161442 [meta.py:_save_pip():53] save pip
+2022-07-28 18:04:58,429 DEBUG   HandlerThread:161442 [meta.py:_save_pip():67] save pip done
+2022-07-28 18:04:58,429 DEBUG   HandlerThread:161442 [meta.py:_save_conda():74] save conda
+2022-07-28 18:04:59,348 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/requirements.txt
+2022-07-28 18:04:59,348 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/conda-environment.yaml
+2022-07-28 18:04:59,349 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:00,442 DEBUG   HandlerThread:161442 [meta.py:_save_conda():84] save conda done
+2022-07-28 18:05:00,442 DEBUG   HandlerThread:161442 [meta.py:probe():247] probe done
+2022-07-28 18:05:00,445 DEBUG   SenderThread:161442 [sender.py:send():236] send: files
+2022-07-28 18:05:00,445 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-07-28 18:05:00,447 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:05:00,448 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:05:00,567 DEBUG   SenderThread:161442 [sender.py:send():236] send: telemetry
+2022-07-28 18:05:00,905 INFO    Thread-11 :161442 [upload_job.py:push():138] Uploaded file /tmp/tmpih5w9jthwandb/2u3aia83-wandb-metadata.json
+2022-07-28 18:05:01,348 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/conda-environment.yaml
+2022-07-28 18:05:01,348 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-metadata.json
+2022-07-28 18:05:01,348 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:03,079 DEBUG   SenderThread:161442 [sender.py:send():236] send: config
+2022-07-28 18:05:03,349 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:05,349 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:07,350 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:07,874 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:05:07,875 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:05:07,875 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:05:07,876 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:05:08,350 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:09,350 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:11,351 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:13,352 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:15,352 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:15,583 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:05:15,583 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:05:17,353 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:17,995 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:05:17,997 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:05:17,997 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:05:17,997 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:05:18,353 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:19,354 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:21,354 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:23,355 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:25,356 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:26,693 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:05:26,694 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:05:26,694 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:05:26,695 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:05:26,777 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:05:27,356 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:27,356 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:29,357 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/config.yaml
+2022-07-28 18:05:29,357 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:30,694 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:05:30,694 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:05:31,358 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:33,358 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:35,359 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:35,447 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:05:35,448 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:05:35,448 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:05:35,448 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:05:36,359 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:37,359 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:39,360 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:41,361 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:43,361 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:44,135 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:05:44,136 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:05:44,136 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:05:44,137 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:05:44,362 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:45,362 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:45,807 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:05:45,807 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:05:47,363 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:49,363 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:51,364 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:52,800 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:05:52,801 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:05:52,801 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:05:52,801 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:05:53,364 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:53,365 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:05:55,365 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:57,128 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:05:57,366 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:05:59,366 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:00,915 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:06:00,915 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:06:01,367 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:01,451 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:01,452 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:01,452 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:01,452 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:02,367 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:03,368 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:05,368 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:07,369 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:09,369 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:10,119 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:10,120 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:10,120 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:10,120 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:10,370 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:11,370 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:13,371 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:15,371 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:16,025 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:06:16,025 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:06:17,372 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:18,774 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:18,776 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:18,776 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:18,776 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:19,372 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:19,372 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:21,373 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:23,374 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:25,374 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:27,375 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:27,423 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:27,424 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:27,424 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:27,424 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:27,476 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:06:28,375 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:29,375 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:31,135 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:06:31,136 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:06:31,376 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:33,377 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:35,378 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:36,066 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:36,067 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:36,068 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:36,069 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:36,378 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:37,378 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:39,379 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:41,379 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:43,380 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:44,722 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:44,723 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:44,724 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:44,724 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:45,381 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:45,381 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:46,247 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:06:46,247 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:06:47,381 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:49,382 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:51,382 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:53,381 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:06:53,383 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:06:53,383 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:06:53,384 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:53,384 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:53,384 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:06:54,384 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:06:55,384 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:57,385 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:06:57,830 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:06:59,386 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:01,386 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:01,582 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:07:01,583 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:07:02,019 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:02,020 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:02,021 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:02,021 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:02,387 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:03,387 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:05,388 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:07,388 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:09,389 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:10,667 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:10,668 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:10,669 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:10,670 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:11,390 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:11,390 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:13,390 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:15,391 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:16,700 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:07:16,700 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:07:17,391 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:19,315 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:19,316 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:19,317 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:19,317 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:19,392 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:19,392 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:21,393 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:23,393 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:25,394 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:27,395 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:27,972 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:27,973 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:27,974 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:27,975 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:28,182 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:07:28,395 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:29,395 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:31,396 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:31,819 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:07:31,819 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:07:33,397 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:35,397 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:36,628 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:36,629 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:36,629 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:36,630 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:37,398 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:37,398 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:39,398 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:41,399 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:43,400 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:45,315 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:45,316 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:45,316 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:45,317 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:45,400 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:45,401 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:46,929 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:07:46,929 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:07:47,401 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:49,402 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:51,402 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:53,403 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:53,950 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:07:53,951 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:07:53,952 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:07:53,952 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:07:54,403 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:07:55,404 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:57,404 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:07:58,533 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:07:59,405 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:01,406 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:02,039 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:08:02,039 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:08:02,622 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:02,623 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:02,624 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:02,624 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:03,406 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:03,407 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:05,407 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:07,408 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:09,408 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:11,275 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:11,276 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:11,277 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:11,278 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:11,409 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:11,409 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:13,410 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:15,410 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:17,160 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:08:17,160 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:08:17,411 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:19,412 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:19,927 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:19,928 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:19,929 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:19,929 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:20,412 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:21,412 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:23,413 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:25,413 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:27,414 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:28,582 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:28,583 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:28,583 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:28,584 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:28,881 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:08:29,415 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:29,415 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:31,415 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:32,278 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:08:32,279 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:08:33,417 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:35,418 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:37,228 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:37,229 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:37,230 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:37,230 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:37,418 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:37,418 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:39,419 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:41,420 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:43,420 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:45,421 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:45,891 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:45,892 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:45,893 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:45,894 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:46,421 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:47,417 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:08:47,418 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:08:47,421 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:49,422 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:51,423 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:53,423 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:54,544 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:08:54,545 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:08:54,546 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:08:54,546 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:08:55,424 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:55,424 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:08:57,424 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:08:59,231 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:08:59,425 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:01,426 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:02,552 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:09:02,552 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:09:03,198 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:03,199 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:03,199 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:03,200 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:03,426 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:03,427 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:05,427 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:07,427 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:09,428 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:11,429 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:11,851 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:11,852 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:11,853 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:11,853 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:12,429 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:13,430 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:15,430 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:17,431 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:17,665 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:09:17,666 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:09:19,431 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:20,515 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:20,516 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:20,516 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:20,517 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:21,432 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:21,432 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:23,433 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:25,433 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:27,434 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:29,168 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:29,169 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:29,169 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:29,170 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:29,435 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:29,435 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:29,585 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:09:31,435 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:32,782 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:09:32,782 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:09:33,436 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:35,437 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:37,437 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:37,824 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:37,825 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:37,825 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:37,826 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:38,438 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:39,438 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:41,439 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:43,439 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:45,440 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:46,468 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:46,469 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:46,469 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:46,469 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:47,440 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:47,441 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:47,895 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:09:47,896 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:09:49,441 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:51,442 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:53,443 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:55,187 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:09:55,188 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:09:55,189 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:09:55,189 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:09:55,443 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:55,443 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:09:57,444 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:59,444 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:09:59,933 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:10:01,445 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:03,012 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:10:03,012 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:10:03,446 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:03,838 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:03,839 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:03,839 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:03,840 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:04,446 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:05,446 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:07,447 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:09,447 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:11,448 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:12,491 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:12,493 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:12,493 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:12,494 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:13,449 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:13,449 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:15,449 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:17,450 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:18,124 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:10:18,125 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:10:19,450 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:21,141 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:21,142 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:21,142 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:21,143 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:21,451 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:21,451 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:23,452 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:25,452 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:27,453 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:29,454 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:29,782 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:29,783 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:29,784 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:29,784 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:30,293 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:10:30,454 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:31,454 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:33,238 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:10:33,238 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:10:33,455 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:35,455 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:37,456 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:38,424 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:38,425 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:38,426 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:38,426 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:38,456 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:39,457 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:41,457 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:43,458 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:45,458 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:47,045 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:47,047 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:47,047 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:47,048 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:47,459 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:47,459 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:48,348 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:10:48,348 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:10:49,460 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:51,460 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:53,461 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:55,462 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:55,674 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:10:55,675 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:10:55,676 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:10:55,676 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:10:56,462 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:10:57,462 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:10:59,463 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:00,648 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:11:01,464 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:03,462 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:11:03,462 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:11:03,465 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:04,375 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:11:04,376 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:11:04,377 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:11:04,377 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:11:04,465 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:11:05,465 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:07,466 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:09,467 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:11,467 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:13,468 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:14,042 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:11:14,043 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:11:14,044 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:11:14,044 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:11:14,468 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:11:15,469 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:17,469 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:18,576 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:11:18,577 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:11:19,470 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:21,471 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:23,471 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:23,849 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:11:23,851 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:11:23,851 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:11:23,852 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:11:24,472 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:11:25,472 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:27,472 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:29,473 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:31,003 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:11:31,474 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:33,474 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:33,681 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:11:33,682 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:11:33,682 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:11:33,683 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:11:33,760 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:11:33,761 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:11:34,475 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:11:35,475 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:37,475 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:39,476 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:41,477 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:43,450 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:11:43,451 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:11:43,451 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:11:43,452 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:11:43,477 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:43,478 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:11:45,478 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:47,479 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:48,871 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:11:48,871 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:11:49,479 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:51,480 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:53,199 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:11:53,200 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:11:53,201 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:11:53,202 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:11:53,480 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:53,481 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:11:55,481 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:57,482 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:11:59,482 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:01,355 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:12:01,483 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:02,940 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:12:02,941 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:12:02,941 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:12:02,942 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:12:03,483 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:03,484 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:12:04,180 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:12:04,180 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:12:05,484 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:07,484 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:09,485 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:11,485 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:12,760 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:12:12,761 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:12:12,762 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:12:12,762 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:12:13,486 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:13,486 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:12:15,486 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:17,487 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:19,310 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-28 18:12:19,310 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: stop_status
+2022-07-28 18:12:19,488 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:21,488 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:22,439 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:12:22,440 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:12:22,441 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:12:22,441 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:12:22,488 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:12:23,489 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:25,489 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:27,490 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:29,491 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:31,491 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:31,705 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:12:32,098 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-28 18:12:32,100 DEBUG   SenderThread:161442 [sender.py:send():236] send: history
+2022-07-28 18:12:32,100 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:12:32,101 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:12:32,198 DEBUG   SenderThread:161442 [sender.py:send():236] send: telemetry
+2022-07-28 18:12:32,492 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:12:33,492 INFO    Thread-7  :161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:34,569 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:34,569 DEBUG   SenderThread:161442 [sender.py:send():236] send: exit
+2022-07-28 18:12:34,570 INFO    SenderThread:161442 [sender.py:send_exit():372] handling exit code: 0
+2022-07-28 18:12:34,570 INFO    SenderThread:161442 [sender.py:send_exit():374] handling runtime: 456
+2022-07-28 18:12:34,570 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:12:34,570 INFO    SenderThread:161442 [sender.py:send_exit():380] send defer
+2022-07-28 18:12:34,570 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:34,571 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,571 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 0
+2022-07-28 18:12:34,571 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,571 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-07-28 18:12:34,571 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 1
+2022-07-28 18:12:34,571 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,571 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 1
+2022-07-28 18:12:34,644 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,644 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-07-28 18:12:34,645 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 2
+2022-07-28 18:12:34,645 DEBUG   SenderThread:161442 [sender.py:send():236] send: stats
+2022-07-28 18:12:34,645 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,645 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 2
+2022-07-28 18:12:34,645 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,645 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-07-28 18:12:34,645 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 3
+2022-07-28 18:12:34,645 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,645 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 3
+2022-07-28 18:12:34,645 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,646 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-07-28 18:12:34,646 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 4
+2022-07-28 18:12:34,646 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,646 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 4
+2022-07-28 18:12:34,646 DEBUG   SenderThread:161442 [sender.py:send():236] send: summary
+2022-07-28 18:12:34,646 INFO    SenderThread:161442 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:12:34,647 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,647 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-07-28 18:12:34,647 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 5
+2022-07-28 18:12:34,647 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,647 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 5
+2022-07-28 18:12:34,647 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,647 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-07-28 18:12:34,672 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:34,794 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 6
+2022-07-28 18:12:34,795 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:34,795 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:34,795 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 6
+2022-07-28 18:12:34,795 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:34,795 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-07-28 18:12:34,795 INFO    SenderThread:161442 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-07-28 18:12:34,896 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:35,493 INFO    SenderThread:161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/config.yaml
+2022-07-28 18:12:35,493 INFO    SenderThread:161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:35,493 INFO    SenderThread:161442 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:12:35,493 INFO    SenderThread:161442 [dir_watcher.py:finish():383] scan: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files
+2022-07-28 18:12:35,493 INFO    SenderThread:161442 [dir_watcher.py:finish():397] scan save: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log output.log
+2022-07-28 18:12:35,494 INFO    SenderThread:161442 [dir_watcher.py:finish():397] scan save: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/requirements.txt requirements.txt
+2022-07-28 18:12:35,494 INFO    SenderThread:161442 [dir_watcher.py:finish():397] scan save: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/config.yaml config.yaml
+2022-07-28 18:12:35,494 INFO    SenderThread:161442 [dir_watcher.py:finish():397] scan save: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-metadata.json wandb-metadata.json
+2022-07-28 18:12:35,494 INFO    SenderThread:161442 [dir_watcher.py:finish():397] scan save: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/conda-environment.yaml conda-environment.yaml
+2022-07-28 18:12:35,496 INFO    SenderThread:161442 [dir_watcher.py:finish():397] scan save: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json wandb-summary.json
+2022-07-28 18:12:35,498 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 7
+2022-07-28 18:12:35,502 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:35,504 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:35,504 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 7
+2022-07-28 18:12:35,504 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:35,504 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-07-28 18:12:35,504 INFO    SenderThread:161442 [file_pusher.py:finish():171] shutting down file pusher
+2022-07-28 18:12:35,603 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:35,603 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:35,704 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:35,704 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:35,806 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:35,806 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:35,907 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:35,908 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:35,928 INFO    Thread-15 :161442 [upload_job.py:push():138] Uploaded file /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/conda-environment.yaml
+2022-07-28 18:12:35,931 INFO    Thread-13 :161442 [upload_job.py:push():138] Uploaded file /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/requirements.txt
+2022-07-28 18:12:35,951 INFO    Thread-16 :161442 [upload_job.py:push():138] Uploaded file /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/wandb-summary.json
+2022-07-28 18:12:35,968 INFO    Thread-14 :161442 [upload_job.py:push():138] Uploaded file /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/config.yaml
+2022-07-28 18:12:36,009 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:36,009 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:36,021 INFO    Thread-12 :161442 [upload_job.py:push():138] Uploaded file /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/files/output.log
+2022-07-28 18:12:36,110 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:36,111 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:36,212 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:36,212 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:36,222 INFO    Thread-6  :161442 [sender.py:transition_state():393] send defer: 8
+2022-07-28 18:12:36,222 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:36,222 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 8
+2022-07-28 18:12:36,223 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:36,223 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-07-28 18:12:36,314 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:36,466 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 9
+2022-07-28 18:12:36,467 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:36,467 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:36,467 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 9
+2022-07-28 18:12:36,468 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:36,468 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-07-28 18:12:36,468 INFO    SenderThread:161442 [sender.py:transition_state():393] send defer: 10
+2022-07-28 18:12:36,468 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: defer
+2022-07-28 18:12:36,468 DEBUG   SenderThread:161442 [sender.py:send():236] send: final
+2022-07-28 18:12:36,468 INFO    HandlerThread:161442 [handler.py:handle_request_defer():163] handle defer: 10
+2022-07-28 18:12:36,468 DEBUG   SenderThread:161442 [sender.py:send():236] send: footer
+2022-07-28 18:12:36,469 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: defer
+2022-07-28 18:12:36,469 INFO    SenderThread:161442 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-07-28 18:12:36,568 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-28 18:12:36,568 DEBUG   SenderThread:161442 [sender.py:send_request():250] send_request: poll_exit
+2022-07-28 18:12:36,569 INFO    SenderThread:161442 [file_pusher.py:join():176] waiting for file pusher
+2022-07-28 18:12:36,891 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: sampled_history
+2022-07-28 18:12:36,894 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: get_summary
+2022-07-28 18:12:36,895 DEBUG   HandlerThread:161442 [handler.py:handle_request():140] handle_request: shutdown
+2022-07-28 18:12:36,895 INFO    HandlerThread:161442 [handler.py:finish():806] shutting down handler
+2022-07-28 18:12:37,469 INFO    WriterThread:161442 [datastore.py:close():279] close: /home/nhattrup/Fluxional_MD/wandb/run-20220728_180457-35z4h73h/run-35z4h73h.wandb
+2022-07-28 18:12:37,790 INFO    SenderThread:161442 [sender.py:finish():1114] shutting down sender
+2022-07-28 18:12:37,790 INFO    SenderThread:161442 [file_pusher.py:finish():171] shutting down file pusher
+2022-07-28 18:12:37,790 INFO    SenderThread:161442 [file_pusher.py:join():176] waiting for file pusher
+2022-07-28 18:12:37,792 INFO    MainThread:161442 [internal.py:handle_exit():80] Internal process exited

@@ -1,0 +1,36 @@
+2022-07-28 18:21:25,519 INFO    MainThread:162112 [internal.py:wandb_internal():90] W&B internal server running at pid: 162112, started at: 2022-07-28 18:21:25.519090
+2022-07-28 18:21:25,520 INFO    WriterThread:162112 [datastore.py:open_for_write():75] open: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/run-whiekrhe.wandb
+2022-07-28 18:21:25,521 DEBUG   SenderThread:162112 [sender.py:send():236] send: header
+2022-07-28 18:21:25,521 DEBUG   SenderThread:162112 [sender.py:send():236] send: run
+2022-07-28 18:21:25,531 INFO    SenderThread:162112 [sender.py:_maybe_setup_resume():493] checking resume status for None/bvl_bvl_rxn1/whiekrhe
+2022-07-28 18:21:25,954 INFO    SenderThread:162112 [dir_watcher.py:__init__():216] watching files in: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/files
+2022-07-28 18:21:25,954 INFO    SenderThread:162112 [sender.py:_start_run_threads():815] run started: whiekrhe with start time 1659046885
+2022-07-28 18:21:25,957 DEBUG   SenderThread:162112 [sender.py:send():236] send: summary
+2022-07-28 18:21:25,957 DEBUG   HandlerThread:162112 [handler.py:handle_request():140] handle_request: check_version
+2022-07-28 18:21:25,957 INFO    SenderThread:162112 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 18:21:25,957 DEBUG   SenderThread:162112 [sender.py:send_request():250] send_request: check_version
+2022-07-28 18:21:26,018 DEBUG   HandlerThread:162112 [handler.py:handle_request():140] handle_request: run_start
+2022-07-28 18:21:26,020 DEBUG   HandlerThread:162112 [meta.py:__init__():35] meta init
+2022-07-28 18:21:26,020 DEBUG   HandlerThread:162112 [meta.py:__init__():49] meta init done
+2022-07-28 18:21:26,020 DEBUG   HandlerThread:162112 [meta.py:probe():209] probe
+2022-07-28 18:21:26,027 DEBUG   HandlerThread:162112 [meta.py:_setup_git():199] setup git
+2022-07-28 18:21:26,035 DEBUG   HandlerThread:162112 [meta.py:_setup_git():206] setup git done
+2022-07-28 18:21:26,035 DEBUG   HandlerThread:162112 [meta.py:_save_pip():53] save pip
+2022-07-28 18:21:26,035 DEBUG   HandlerThread:162112 [meta.py:_save_pip():67] save pip done
+2022-07-28 18:21:26,035 DEBUG   HandlerThread:162112 [meta.py:_save_conda():74] save conda
+2022-07-28 18:21:26,614 WARNING MainThread:162112 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-07-28 18:21:26,641 DEBUG   HandlerThread:162112 [meta.py:_save_conda():84] save conda done
+2022-07-28 18:21:26,641 DEBUG   HandlerThread:162112 [meta.py:probe():247] probe done
+2022-07-28 18:21:26,644 DEBUG   SenderThread:162112 [sender.py:send():236] send: files
+2022-07-28 18:21:26,644 INFO    SenderThread:162112 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-07-28 18:21:26,772 WARNING MainThread:162112 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2022-07-28 18:21:26,773 ERROR   MainThread:162112 [internal.py:wandb_internal():156] Internal process interrupted.
+2022-07-28 18:21:26,956 INFO    Thread-7  :162112 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/files/requirements.txt
+2022-07-28 18:21:26,957 INFO    Thread-7  :162112 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/files/wandb-metadata.json
+2022-07-28 18:21:26,957 INFO    Thread-7  :162112 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/files/conda-environment.yaml
+2022-07-28 18:21:26,957 INFO    Thread-7  :162112 [dir_watcher.py:_on_file_created():269] file/dir created: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/files/wandb-summary.json
+2022-07-28 18:21:27,109 INFO    Thread-11 :162112 [upload_job.py:push():138] Uploaded file /tmp/tmp0v84tng_wandb/2bmf688q-wandb-metadata.json
+2022-07-28 18:21:27,644 INFO    WriterThread:162112 [datastore.py:close():279] close: /home/nhattrup/Fluxional_MD/wandb/run-20220728_182125-whiekrhe/run-whiekrhe.wandb
+2022-07-28 18:21:27,644 INFO    MainThread:162112 [internal.py:handle_exit():80] Internal process exited
+2022-07-28 18:21:27,645 INFO    SenderThread:162112 [sender.py:finish():1114] shutting down sender
+2022-07-28 18:21:27,645 INFO    SenderThread:162112 [dir_watcher.py:finish():353] shutting down directory watcher

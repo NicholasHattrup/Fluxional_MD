@@ -1,0 +1,28 @@
+2022-07-28 17:55:45,367 INFO    MainThread:160887 [internal.py:wandb_internal():90] W&B internal server running at pid: 160887, started at: 2022-07-28 17:55:45.367677
+2022-07-28 17:55:45,369 INFO    WriterThread:160887 [datastore.py:open_for_write():75] open: /home/nhattrup/Fluxional_MD/wandb/run-20220728_175545-or4u0fl0/run-or4u0fl0.wandb
+2022-07-28 17:55:45,370 DEBUG   SenderThread:160887 [sender.py:send():236] send: header
+2022-07-28 17:55:45,370 DEBUG   SenderThread:160887 [sender.py:send():236] send: run
+2022-07-28 17:55:45,380 INFO    SenderThread:160887 [sender.py:_maybe_setup_resume():493] checking resume status for None/bvl_bvl_rxn1/or4u0fl0
+2022-07-28 17:55:45,647 INFO    SenderThread:160887 [dir_watcher.py:__init__():216] watching files in: /home/nhattrup/Fluxional_MD/wandb/run-20220728_175545-or4u0fl0/files
+2022-07-28 17:55:45,647 INFO    SenderThread:160887 [sender.py:_start_run_threads():815] run started: or4u0fl0 with start time 1659045345
+2022-07-28 17:55:45,649 DEBUG   SenderThread:160887 [sender.py:send():236] send: summary
+2022-07-28 17:55:45,649 DEBUG   HandlerThread:160887 [handler.py:handle_request():140] handle_request: check_version
+2022-07-28 17:55:45,649 INFO    SenderThread:160887 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-28 17:55:45,649 DEBUG   SenderThread:160887 [sender.py:send_request():250] send_request: check_version
+2022-07-28 17:55:45,708 DEBUG   HandlerThread:160887 [handler.py:handle_request():140] handle_request: run_start
+2022-07-28 17:55:45,710 DEBUG   HandlerThread:160887 [meta.py:__init__():35] meta init
+2022-07-28 17:55:45,711 DEBUG   HandlerThread:160887 [meta.py:__init__():49] meta init done
+2022-07-28 17:55:45,711 DEBUG   HandlerThread:160887 [meta.py:probe():209] probe
+2022-07-28 17:55:45,717 DEBUG   HandlerThread:160887 [meta.py:_setup_git():199] setup git
+2022-07-28 17:55:45,725 DEBUG   HandlerThread:160887 [meta.py:_setup_git():206] setup git done
+2022-07-28 17:55:45,725 DEBUG   HandlerThread:160887 [meta.py:_save_pip():53] save pip
+2022-07-28 17:55:45,725 WARNING MainThread:160887 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-07-28 17:55:45,725 DEBUG   HandlerThread:160887 [meta.py:_save_pip():67] save pip done
+2022-07-28 17:55:45,725 DEBUG   HandlerThread:160887 [meta.py:_save_conda():74] save conda
+2022-07-28 17:55:45,908 WARNING MainThread:160887 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2022-07-28 17:55:45,908 ERROR   MainThread:160887 [internal.py:wandb_internal():156] Internal process interrupted.
+2022-07-28 17:55:45,923 DEBUG   HandlerThread:160887 [meta.py:_save_conda():84] save conda done
+2022-07-28 17:55:45,923 DEBUG   HandlerThread:160887 [meta.py:probe():247] probe done
+2022-07-28 17:55:45,925 INFO    HandlerThread:160887 [handler.py:finish():806] shutting down handler
+2022-07-28 17:55:46,369 INFO    WriterThread:160887 [datastore.py:close():279] close: /home/nhattrup/Fluxional_MD/wandb/run-20220728_175545-or4u0fl0/run-or4u0fl0.wandb
+2022-07-28 17:55:46,370 INFO    MainThread:160887 [internal.py:handle_exit():80] Internal process exited

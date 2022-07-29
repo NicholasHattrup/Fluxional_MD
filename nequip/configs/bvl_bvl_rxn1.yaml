@@ -4,10 +4,10 @@
 # run_name contains logfiles and saved models
 # process contains processed data sets
 # if 'root'/'run_name' exists, 'root'/'run_name'_'year'-'month'-'day'-'hour'-'min'-'s' will be used instead.
-root: results/bvl_bvl_rxn1/TS_MD
-run_name: bvl_bvl_rxn1_TS_MD_1000
-seed: 123                                                                         # model seed
-dataset_seed: 456                                                                 # data set seed
+root: results/bvl_bvl_rxn1/Ensemble
+run_name: bvl_bvl_rxn1_ensemble_5
+seed: 453                                                                         # model seed
+dataset_seed: 561                                                                 # data set seed
 append: true                                                                      # set true if a restarted run should append to the previous log file
 default_dtype: float32                                                            # type of float to use, e.g. float32 and float64
 
@@ -49,7 +49,7 @@ use_sc: true                                                                    
 # note that if your data set uses pbc, you need to also pass an array that maps to the nequip "pbc" key
 dataset: ase                                                                       # type of data set, can be npz or ase
 dataset_url:           # url to download the npz. optional
-dataset_file_name: molecules/bvl_bvl/rxn1/TS_MD/bvl_bvl_rxn1_TS_MD.extxyz                       # path to data set file
+dataset_file_name: nequip/molecules/bvl_bvl/rxn1/TS_MD/bvl_bvl_rxn1_TS_MD.extxyz                       # path to data set file
 key_mapping:
   z: atomic_numbers                                                                # atomic species, integers
   E: total_energy                                                                  # total potential eneriges to train to
@@ -80,7 +80,7 @@ n_train: 708                                                                    
 n_val: 304                                                                          # number of validation data
 learning_rate: 0.005                                                               # learning rate, we found values between 0.01 and 0.005 to work best - this is often one of the most important hyperparameters to tune
 batch_size: 5                                                                      # batch size, we found it important to keep this small for most applications including forces (1-5); for energy-only training, higher batch sizes work better
-max_epochs: 1000                                                                    # stop training after _ number of epochs, we set a small number here to have an example that finished within a few minutes, but in practice we recommend using a very large number, as e.g. 1million and then to just use early stopping and not train the full number of epochs
+max_epochs: 50                                                                    # stop training after _ number of epochs, we set a small number here to have an example that finished within a few minutes, but in practice we recommend using a very large number, as e.g. 1million and then to just use early stopping and not train the full number of epochs
 train_val_split: random                                                            # can be random or sequential. if sequential, first n_train elements are training, next n_val are val, else random, usually random is the right choice
 shuffle: true                                                                      # if true, the data loader will shuffle the data, usually a good idea
 metrics_key: validation_loss                                                       # metrics used for scheduling and saving best model. Options: `set`_`quantity`, set can be either "train" or "validation, "quantity" can be loss or anything that appears in the validation batch step header, such as f_mae, f_rmse, e_mae, e_rmse

@@ -1,0 +1,25 @@
+{
+    "os": "Linux-4.18.0-372.13.1.el8_6.x86_64-x86_64-with-glibc2.28",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-07-28T22:04:58.414614",
+    "startedAt": "2022-07-28T22:04:57.682429",
+    "docker": null,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 1,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "nequip/configs/bvl_bvl_rxn1.yaml"
+    ],
+    "state": "running",
+    "program": "/home/nhattrup/.conda/envs/nequip/bin/nequip-train",
+    "git": {
+        "remote": "https://github.com/NicholasHattrup/Fluxional_MD",
+        "commit": "8a77af4a26f9f867ef1365582bf6d7862e09cb81"
+    },
+    "email": "nhattrup@andrew.cmu.edu",
+    "root": "/home/nhattrup/Fluxional_MD",
+    "host": "gpg-gibbs",
+    "username": "nhattrup",
+    "executable": "/home/nhattrup/.conda/envs/nequip/bin/python"
+}
